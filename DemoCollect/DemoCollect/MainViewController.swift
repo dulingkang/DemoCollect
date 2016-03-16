@@ -13,7 +13,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var classes: [String] {
         get{
-            return ["AnchorPoint"
+            return ["AnchorPoint",
+                "NaviFrame"
             ]
         }
     }
