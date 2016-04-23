@@ -9,6 +9,19 @@
 #ifndef DCGlobalDef_h
 #define DCGlobalDef_h
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#if defined( LOG_ASYNC_ENABLED )
+#undef LOG_ASYNC_ENABLED
+#define LOG_ASYNC_ENABLED NO
+#endif
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelAll;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+
 //单例化一个类
 #define SingletonDefine(className) \
 \

@@ -20,7 +20,7 @@
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _classNames = @[@"AppListViewController", @"GifDisplayViewController"];
+    _classNames = @[@"AppListViewController", @"GifDisplayViewController", @"DDLogViewController"];
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;

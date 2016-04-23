@@ -18,6 +18,7 @@
 		29576E171CCA2DA8001839BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29576E111CCA2DA8001839BF /* Info.plist */; };
 		29576E181CCA2DA8001839BF /* start_ani.gif in Resources */ = {isa = PBXBuildFile; fileRef = 29576E121CCA2DA8001839BF /* start_ani.gif */; };
 		295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */; };
+		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
 		6E60839F1F748132CE958684 /* libPods-DemoCollectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		29576E1A1CCA2E1D001839BF /* DCGlobalDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCGlobalDef.h; sourceTree = "<group>"; };
 		295C4CF71CB3616E0050A5DA /* GifDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifDisplayViewController.h; sourceTree = "<group>"; };
 		295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDisplayViewController.m; sourceTree = "<group>"; };
+		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
+		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
 		55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoCollectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEB050476511DBA043D7682 /* Pods-DemoCollectOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +116,8 @@
 				290154311CAD08E4009CA4FA /* AppListViewController.m */,
 				295C4CF71CB3616E0050A5DA /* GifDisplayViewController.h */,
 				295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */,
+				3A24C3141CCA6B7600E02148 /* DDLogViewController.h */,
+				3A24C3151CCA6B7600E02148 /* DDLogViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				290154321CAD08E4009CA4FA /* AppListViewController.m in Sources */,
 				2901541A1CAD0872009CA4FA /* main.m in Sources */,
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
+				3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
