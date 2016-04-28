@@ -18,6 +18,7 @@
 		29576E171CCA2DA8001839BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29576E111CCA2DA8001839BF /* Info.plist */; };
 		29576E181CCA2DA8001839BF /* start_ani.gif in Resources */ = {isa = PBXBuildFile; fileRef = 29576E121CCA2DA8001839BF /* start_ani.gif */; };
 		295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */; };
+		2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
 		6E60839F1F748132CE958684 /* libPods-DemoCollectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,8 @@
 		29576E1A1CCA2E1D001839BF /* DCGlobalDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCGlobalDef.h; sourceTree = "<group>"; };
 		295C4CF71CB3616E0050A5DA /* GifDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifDisplayViewController.h; sourceTree = "<group>"; };
 		295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDisplayViewController.m; sourceTree = "<group>"; };
+		2A14C4951CD1B9FA00631CB9 /* AppstoreEvaluateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppstoreEvaluateViewController.h; sourceTree = "<group>"; };
+		2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppstoreEvaluateViewController.m; sourceTree = "<group>"; };
 		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
 		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
 		55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoCollectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +121,8 @@
 				295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */,
 				3A24C3141CCA6B7600E02148 /* DDLogViewController.h */,
 				3A24C3151CCA6B7600E02148 /* DDLogViewController.m */,
+				2A14C4951CD1B9FA00631CB9 /* AppstoreEvaluateViewController.h */,
+				2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				2901541D1CAD0872009CA4FA /* AppDelegate.m in Sources */,
 				295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */,
 				290154321CAD08E4009CA4FA /* AppListViewController.m in Sources */,
+				2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */,
 				2901541A1CAD0872009CA4FA /* main.m in Sources */,
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
 				3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */,
