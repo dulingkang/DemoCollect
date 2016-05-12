@@ -19,9 +19,21 @@
 		29576E181CCA2DA8001839BF /* start_ani.gif in Resources */ = {isa = PBXBuildFile; fileRef = 29576E121CCA2DA8001839BF /* start_ani.gif */; };
 		295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */; };
 		2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */; };
+		2A14C4A41CD1EACA00631CB9 /* DemoCollectOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4A31CD1EACA00631CB9 /* DemoCollectOCTests.m */; };
+		2ACD60111CE4265500F9D17A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD60101CE4265500F9D17A /* main.js */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
 		6E60839F1F748132CE958684 /* libPods-DemoCollectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A14C4A61CD1EACA00631CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2901540D1CAD0872009CA4FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290154141CAD0872009CA4FA;
+			remoteInfo = DemoCollectOC;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02F744AD65DD12BFA8B0A6AD /* Pods-DemoCollectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +56,10 @@
 		295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDisplayViewController.m; sourceTree = "<group>"; };
 		2A14C4951CD1B9FA00631CB9 /* AppstoreEvaluateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppstoreEvaluateViewController.h; sourceTree = "<group>"; };
 		2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppstoreEvaluateViewController.m; sourceTree = "<group>"; };
+		2A14C4A11CD1EACA00631CB9 /* DemoCollectOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCollectOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A14C4A31CD1EACA00631CB9 /* DemoCollectOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCollectOCTests.m; sourceTree = "<group>"; };
+		2A14C4A51CD1EACA00631CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACD60101CE4265500F9D17A /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
 		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
 		55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoCollectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +72,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E60839F1F748132CE958684 /* libPods-DemoCollectOC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A14C49E1CD1EACA00631CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				290154171CAD0872009CA4FA /* DemoCollectOC */,
+				2A14C4A21CD1EACA00631CB9 /* DemoCollectOCTests */,
 				290154161CAD0872009CA4FA /* Products */,
 				1066B7713C0BF733E34781D3 /* Pods */,
 				430C5F8AEC05650B0805307F /* Frameworks */,
@@ -85,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				290154151CAD0872009CA4FA /* DemoCollectOC.app */,
+				2A14C4A11CD1EACA00631CB9 /* DemoCollectOCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				290154191CAD0872009CA4FA /* main.m */,
+				2ACD60101CE4265500F9D17A /* main.js */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,6 +174,15 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
+		2A14C4A21CD1EACA00631CB9 /* DemoCollectOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A14C4A31CD1EACA00631CB9 /* DemoCollectOCTests.m */,
+				2A14C4A51CD1EACA00631CB9 /* Info.plist */,
+			);
+			path = DemoCollectOCTests;
+			sourceTree = "<group>";
+		};
 		430C5F8AEC05650B0805307F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +214,24 @@
 			productReference = 290154151CAD0872009CA4FA /* DemoCollectOC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2A14C4A01CD1EACA00631CB9 /* DemoCollectOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A14C4AA1CD1EACA00631CB9 /* Build configuration list for PBXNativeTarget "DemoCollectOCTests" */;
+			buildPhases = (
+				2A14C49D1CD1EACA00631CB9 /* Sources */,
+				2A14C49E1CD1EACA00631CB9 /* Frameworks */,
+				2A14C49F1CD1EACA00631CB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A14C4A71CD1EACA00631CB9 /* PBXTargetDependency */,
+			);
+			name = DemoCollectOCTests;
+			productName = DemoCollectOCTests;
+			productReference = 2A14C4A11CD1EACA00631CB9 /* DemoCollectOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,6 +244,10 @@
 					290154141CAD0872009CA4FA = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = A9VAJDN54X;
+					};
+					2A14C4A01CD1EACA00631CB9 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 290154141CAD0872009CA4FA;
 					};
 				};
 			};
@@ -208,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				290154141CAD0872009CA4FA /* DemoCollectOC */,
+				2A14C4A01CD1EACA00631CB9 /* DemoCollectOCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,8 +279,16 @@
 				29576E141CCA2DA8001839BF /* Assets.xcassets in Resources */,
 				29576E181CCA2DA8001839BF /* start_ani.gif in Resources */,
 				29576E131CCA2DA8001839BF /* anim.gif in Resources */,
+				2ACD60111CE4265500F9D17A /* main.js in Resources */,
 				29576E171CCA2DA8001839BF /* Info.plist in Resources */,
 				29576E161CCA2DA8001839BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A14C49F1CD1EACA00631CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +357,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A14C49D1CD1EACA00631CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A14C4A41CD1EACA00631CB9 /* DemoCollectOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A14C4A71CD1EACA00631CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290154141CAD0872009CA4FA /* DemoCollectOC */;
+			targetProxy = 2A14C4A61CD1EACA00631CB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		29576E0D1CCA2DA8001839BF /* LaunchScreen.storyboard */ = {
@@ -425,6 +507,30 @@
 			};
 			name = Release;
 		};
+		2A14C4A81CD1EACA00631CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DemoCollectOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.DemoCollectOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoCollectOC.app/DemoCollectOC";
+			};
+			name = Debug;
+		};
+		2A14C4A91CD1EACA00631CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DemoCollectOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.DemoCollectOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoCollectOC.app/DemoCollectOC";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -442,6 +548,15 @@
 			buildConfigurations = (
 				2901542D1CAD0872009CA4FA /* Debug */,
 				2901542E1CAD0872009CA4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A14C4AA1CD1EACA00631CB9 /* Build configuration list for PBXNativeTarget "DemoCollectOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A14C4A81CD1EACA00631CB9 /* Debug */,
+				2A14C4A91CD1EACA00631CB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
