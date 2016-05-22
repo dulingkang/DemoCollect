@@ -22,6 +22,8 @@
 		2A14C4A41CD1EACA00631CB9 /* DemoCollectOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4A31CD1EACA00631CB9 /* DemoCollectOCTests.m */; };
 		2ACD60111CE4265500F9D17A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD60101CE4265500F9D17A /* main.js */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
+		3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C21CF175A700300729 /* PlayerViewController.m */; };
+		3AAEF7C61CF1764400300729 /* beauty_ok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */; };
 		6E60839F1F748132CE958684 /* libPods-DemoCollectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,9 @@
 		2ACD60101CE4265500F9D17A /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
 		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
+		3AAEF7C11CF175A700300729 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		3AAEF7C21CF175A700300729 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beauty_ok.mp3; sourceTree = "<group>"; };
 		55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoCollectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEB050476511DBA043D7682 /* Pods-DemoCollectOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +154,8 @@
 				3A24C3151CCA6B7600E02148 /* DDLogViewController.m */,
 				2A14C4951CD1B9FA00631CB9 /* AppstoreEvaluateViewController.h */,
 				2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */,
+				3AAEF7C11CF175A700300729 /* PlayerViewController.h */,
+				3AAEF7C21CF175A700300729 /* PlayerViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 		29576E0A1CCA2DA8001839BF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */,
 				29576E0B1CCA2DA8001839BF /* anim.gif */,
 				29576E0C1CCA2DA8001839BF /* Assets.xcassets */,
 				29576E0D1CCA2DA8001839BF /* LaunchScreen.storyboard */,
@@ -281,6 +289,7 @@
 				29576E131CCA2DA8001839BF /* anim.gif in Resources */,
 				2ACD60111CE4265500F9D17A /* main.js in Resources */,
 				29576E171CCA2DA8001839BF /* Info.plist in Resources */,
+				3AAEF7C61CF1764400300729 /* beauty_ok.mp3 in Resources */,
 				29576E161CCA2DA8001839BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */,
 				2901541D1CAD0872009CA4FA /* AppDelegate.m in Sources */,
 				295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */,
 				290154321CAD08E4009CA4FA /* AppListViewController.m in Sources */,
