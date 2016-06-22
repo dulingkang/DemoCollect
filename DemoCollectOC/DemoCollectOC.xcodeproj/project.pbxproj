@@ -20,11 +20,13 @@
 		295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */; };
 		2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */; };
 		2A14C4A41CD1EACA00631CB9 /* DemoCollectOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4A31CD1EACA00631CB9 /* DemoCollectOCTests.m */; };
+		2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F151D193677000E6803 /* WebpImageViewController.m */; };
+		2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */; };
 		2ACD60111CE4265500F9D17A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD60101CE4265500F9D17A /* main.js */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
 		3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C21CF175A700300729 /* PlayerViewController.m */; };
 		3AAEF7C61CF1764400300729 /* beauty_ok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */; };
-		6E60839F1F748132CE958684 /* libPods-DemoCollectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */; };
+		A1A66D5A23CC12AFBCB3C2B8 /* libPods-DemoCollectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBB0A886F7A21785BD19B2E /* libPods-DemoCollectOC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F744AD65DD12BFA8B0A6AD /* Pods-DemoCollectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.debug.xcconfig"; sourceTree = "<group>"; };
 		290154151CAD0872009CA4FA /* DemoCollectOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCollectOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		290154191CAD0872009CA4FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2901541B1CAD0872009CA4FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,14 +62,20 @@
 		2A14C4A11CD1EACA00631CB9 /* DemoCollectOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCollectOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A14C4A31CD1EACA00631CB9 /* DemoCollectOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCollectOCTests.m; sourceTree = "<group>"; };
 		2A14C4A51CD1EACA00631CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A989F141D193677000E6803 /* WebpImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebpImageViewController.h; sourceTree = "<group>"; };
+		2A989F151D193677000E6803 /* WebpImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebpImageViewController.m; sourceTree = "<group>"; };
+		2A989F171D1A3A6E000E6803 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2A989F191D1A466F000E6803 /* DMCustomURLSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCustomURLSessionProtocol.h; sourceTree = "<group>"; };
+		2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCustomURLSessionProtocol.m; sourceTree = "<group>"; };
+		2AB3759E2907B9A84C5953E1 /* Pods-DemoCollectOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.release.xcconfig"; sourceTree = "<group>"; };
 		2ACD60101CE4265500F9D17A /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
 		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
 		3AAEF7C11CF175A700300729 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		3AAEF7C21CF175A700300729 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beauty_ok.mp3; sourceTree = "<group>"; };
-		55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoCollectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEEB050476511DBA043D7682 /* Pods-DemoCollectOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.release.xcconfig"; sourceTree = "<group>"; };
+		AFBB0A886F7A21785BD19B2E /* libPods-DemoCollectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoCollectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC528D3B3297D36F6FEE13BA /* Pods-DemoCollectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E60839F1F748132CE958684 /* libPods-DemoCollectOC.a in Frameworks */,
+				A1A66D5A23CC12AFBCB3C2B8 /* libPods-DemoCollectOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,23 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1066B7713C0BF733E34781D3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				02F744AD65DD12BFA8B0A6AD /* Pods-DemoCollectOC.debug.xcconfig */,
-				AEEB050476511DBA043D7682 /* Pods-DemoCollectOC.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		2901540C1CAD0872009CA4FA = {
 			isa = PBXGroup;
 			children = (
 				290154171CAD0872009CA4FA /* DemoCollectOC */,
 				2A14C4A21CD1EACA00631CB9 /* DemoCollectOCTests */,
 				290154161CAD0872009CA4FA /* Products */,
-				1066B7713C0BF733E34781D3 /* Pods */,
-				430C5F8AEC05650B0805307F /* Frameworks */,
+				B8E0E0DDC084AFCDF5B542E0 /* Pods */,
+				5C4AD4FEC41EAD79DA834D15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +154,8 @@
 				2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */,
 				3AAEF7C11CF175A700300729 /* PlayerViewController.h */,
 				3AAEF7C21CF175A700300729 /* PlayerViewController.m */,
+				2A989F141D193677000E6803 /* WebpImageViewController.h */,
+				2A989F151D193677000E6803 /* WebpImageViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -178,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				29576E1A1CCA2E1D001839BF /* DCGlobalDef.h */,
+				2A989F191D1A466F000E6803 /* DMCustomURLSessionProtocol.h */,
+				2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -191,12 +193,22 @@
 			path = DemoCollectOCTests;
 			sourceTree = "<group>";
 		};
-		430C5F8AEC05650B0805307F /* Frameworks */ = {
+		5C4AD4FEC41EAD79DA834D15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55DC5531A3011F8C76F234D2 /* libPods-DemoCollectOC.a */,
+				2A989F171D1A3A6E000E6803 /* WebKit.framework */,
+				AFBB0A886F7A21785BD19B2E /* libPods-DemoCollectOC.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8E0E0DDC084AFCDF5B542E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC528D3B3297D36F6FEE13BA /* Pods-DemoCollectOC.debug.xcconfig */,
+				2AB3759E2907B9A84C5953E1 /* Pods-DemoCollectOC.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2901542C1CAD0872009CA4FA /* Build configuration list for PBXNativeTarget "DemoCollectOC" */;
 			buildPhases = (
-				090A1EEA11511B3454026188 /* Check Pods Manifest.lock */,
+				51C60F742FBD334C0A2CE2F4 /* [CP] Check Pods Manifest.lock */,
 				290154111CAD0872009CA4FA /* Sources */,
 				290154121CAD0872009CA4FA /* Frameworks */,
 				290154131CAD0872009CA4FA /* Resources */,
-				2054208F98F53DCB3414FB56 /* Embed Pods Frameworks */,
-				88C10DD2240C7DE8C6340F99 /* Copy Pods Resources */,
+				03E9FF4505C58DC7C1216EBF /* [CP] Embed Pods Frameworks */,
+				D7678CA2D793F6A688A95B78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,29 +316,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		090A1EEA11511B3454026188 /* Check Pods Manifest.lock */ = {
+		03E9FF4505C58DC7C1216EBF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2054208F98F53DCB3414FB56 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,14 +331,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		88C10DD2240C7DE8C6340F99 /* Copy Pods Resources */ = {
+		51C60F742FBD334C0A2CE2F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7678CA2D793F6A688A95B78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */,
 				3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */,
 				2901541D1CAD0872009CA4FA /* AppDelegate.m in Sources */,
 				295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */,
@@ -364,6 +377,7 @@
 				2901541A1CAD0872009CA4FA /* main.m in Sources */,
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
 				3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */,
+				2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +503,7 @@
 		};
 		2901542D1CAD0872009CA4FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02F744AD65DD12BFA8B0A6AD /* Pods-DemoCollectOC.debug.xcconfig */;
+			baseConfigurationReference = CC528D3B3297D36F6FEE13BA /* Pods-DemoCollectOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -504,7 +518,7 @@
 		};
 		2901542E1CAD0872009CA4FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEEB050476511DBA043D7682 /* Pods-DemoCollectOC.release.xcconfig */;
+			baseConfigurationReference = 2AB3759E2907B9A84C5953E1 /* Pods-DemoCollectOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

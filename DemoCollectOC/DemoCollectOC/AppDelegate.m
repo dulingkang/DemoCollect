@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "JPEngine.h"
+#import "DMCustomURLSessionProtocol.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,7 @@
     NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
 
     [JPEngine evaluateScript:script];
+    [NSURLProtocol registerClass:[DMCustomURLSessionProtocol class]];
     return YES;
 }
 

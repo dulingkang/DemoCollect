@@ -40,5 +40,8 @@ return instance;\
 
 #define WEAK_SELF  typeof(self) __weak weakSelf=self;
 
+//UI
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
 
 #endif /* DCGlobalDef_h */

@@ -6,5 +6,7 @@
 target 'DemoCollectOC' do
 pod 'CocoaLumberjack'
 pod 'JSPatch'
+pod 'SDWebImage'
+pod 'SDWebImage/WebP'
 end
 
