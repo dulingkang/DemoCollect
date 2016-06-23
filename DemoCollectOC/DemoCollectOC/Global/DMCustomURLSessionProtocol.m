@@ -10,7 +10,6 @@
 #import <SDWebImage/UIImage+MultiFormat.h>
 
 static NSString *URLProtocolHandledKey = @"URLHasHandle";
-static NSInteger expectedSize = 0;
 
 @interface DMCustomURLSessionProtocol()<NSURLSessionDelegate,NSURLSessionDataDelegate>
 
@@ -35,7 +34,6 @@ static NSInteger expectedSize = 0;
         if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
             return NO;
         }
-        expectedSize = 0;
         return YES;
     }
     return NO;
@@ -50,14 +48,7 @@ static NSInteger expectedSize = 0;
 - (void)startLoading
 {
     NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
-    //标示改request已经处理过了，防止无限循环
     [NSURLProtocol setProperty:@YES forKey:URLProtocolHandledKey inRequest:mutableReqeust];
-    
-    if (![[self.request.URL absoluteString] hasSuffix:@"webp"]) {
-        NSLog(@"是一个正常的,%@",self.request.URL);
-    }else{
-        NSLog(@"检测到了 webp---%@,拦截它",self.request.URL);
-    }
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue currentQueue]];
@@ -75,7 +66,6 @@ static NSInteger expectedSize = 0;
 {
     [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
     NSInteger expected = response.expectedContentLength > 0 ? (NSInteger)response.expectedContentLength : 0;
-    expectedSize = expected;
     self.imageData = [[NSMutableData alloc] initWithCapacity:expected];
     if (completionHandler) {
         completionHandler(NSURLSessionResponseAllow);
@@ -101,8 +91,8 @@ static NSInteger expectedSize = 0;
         [self.client URLProtocol:self didFailWithError:error];
     }else{
         if ([task.currentRequest.URL.absoluteString hasSuffix:@"webp"]) {
-            NSLog(@"webp---%@---替换它",task.currentRequest.URL);
-            //采用 SDWebImage 的转换方法
+            NSLog(@"webp---%@",task.currentRequest.URL);
+
             UIImage *imgData = [UIImage sd_imageWithData:self.imageData];
             NSData *transData = UIImageJPEGRepresentation(imgData, 0.8f);
             self.beginAppendData = NO;
