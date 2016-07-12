@@ -14,7 +14,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     var classes: [String] {
         get{
             return ["AnchorPoint",
-                "NaviFrame"
+                "NaviFrame",
+                "StringStatic"
             ]
         }
     }
