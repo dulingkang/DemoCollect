@@ -25,6 +25,19 @@
     NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
 
     [JPEngine evaluateScript:script];
+    
+#ifdef __IPHONE_9_0
+    NSLog(@"this is iphone more than ios9");
+#else
+    NSLog(@"this is iphone less than ios9");
+#endif
+    
+    NSLog(@"%f", NSFoundationVersionNumber);
+    if(NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_8_4) {
+        NSLog(@"this is iphone more than ios9");
+    }
+
+    
     return YES;
 }
 
