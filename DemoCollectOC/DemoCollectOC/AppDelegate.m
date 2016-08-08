@@ -37,6 +37,16 @@
         NSLog(@"this is iphone more than ios9");
     }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+    UIView *eTestView = [[UIView alloc] init];
+    char *str1 = @encode(int);
+    char *str2 = @encode(NSInteger);
+    char *str3 = @encode(id);
+    char *str4 = @encode(CGRect);
+    char *str5 = @encode(CGPoint);
+#pragma clang diagnostic pop
+
     
     return YES;
 }
