@@ -30,8 +30,11 @@ class StringStatic: UIViewController {
         let string = "StringUtil"
         let className = "DemoCollect" + "." + string
         let selectorName = "test"
-        let currentClass = NSClassFromString(className)! as AnyClass
+        let currentClass = NSClassFromString(className)! as NSObject.Type
         let selector: Selector = Selector(selectorName)
+        if currentClass.respondsToSelector(selector) {
+            currentClass.performSelector(selector)
+        }
     }
     
     override func didReceiveMemoryWarning() {
