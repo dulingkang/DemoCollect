@@ -21,36 +21,25 @@ class StringStatic: UIViewController {
         self.view.backgroundColor = UIColor.whiteColor()
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(StringStatic.viewTapped))
         self.view.addGestureRecognizer(tap)
-        
+//        test()
         
         // Do any additional setup after loading the view.
     }
 
     func viewTapped() {
-        let string = "StringUtil"
-        let className = "DemoCollect" + "." + string
-        let selectorName = "test"
-        let currentClass = NSClassFromString(className)! as NSObject.Type
-        let selector: Selector = Selector(selectorName)
-        if currentClass.respondsToSelector(selector) {
-            currentClass.performSelector(selector)
+//        let string = "StringUtil"
+//        let className = "DemoCollect" + "." + string
+//        let selectorName = "test"
+//        let currentClass = NSClassFromString(className)! as NSObject.Type
+//        let selector: Selector = Selector(selectorName)
+//        if currentClass.respondsToSelector(selector) {
+//            currentClass.performSelector(selector)
+//        }
+    }
+    
+    func test() {
+        if let cls = NSClassFromString("StringUtil") as? AnyClass.Type {
+            print(class_isMetaClass(cls))
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
