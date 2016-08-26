@@ -23,6 +23,7 @@
 		2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F151D193677000E6803 /* WebpImageViewController.m */; };
 		2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */; };
 		2ACD60111CE4265500F9D17A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD60101CE4265500F9D17A /* main.js */; };
+		2ADA4E701D704C67004D8F2E /* CategoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
 		3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C21CF175A700300729 /* PlayerViewController.m */; };
 		3AAEF7C61CF1764400300729 /* beauty_ok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */; };
@@ -69,6 +70,8 @@
 		2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCustomURLSessionProtocol.m; sourceTree = "<group>"; };
 		2AB3759E2907B9A84C5953E1 /* Pods-DemoCollectOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.release.xcconfig"; sourceTree = "<group>"; };
 		2ACD60101CE4265500F9D17A /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		2ADA4E6E1D704C67004D8F2E /* CategoryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTestViewController.h; sourceTree = "<group>"; };
+		2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTestViewController.m; sourceTree = "<group>"; };
 		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
 		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
 		3AAEF7C11CF175A700300729 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				3AAEF7C21CF175A700300729 /* PlayerViewController.m */,
 				2A989F141D193677000E6803 /* WebpImageViewController.h */,
 				2A989F151D193677000E6803 /* WebpImageViewController.m */,
+				2ADA4E6E1D704C67004D8F2E /* CategoryTestViewController.h */,
+				2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */,
+				2ADA4E701D704C67004D8F2E /* CategoryTestViewController.m in Sources */,
 				3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */,
 				2901541D1CAD0872009CA4FA /* AppDelegate.m in Sources */,
 				295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */,

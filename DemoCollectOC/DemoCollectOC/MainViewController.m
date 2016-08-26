@@ -25,7 +25,8 @@
                     @"DDLogViewController",
                     @"AppstoreEvaluateViewController",
                     @"PlayerViewController",
-                    @"WebpImageViewController"];
+                    @"WebpImageViewController",
+                    @"CategoryTestViewController"];
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
