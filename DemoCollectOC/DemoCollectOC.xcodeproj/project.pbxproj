@@ -27,6 +27,7 @@
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
 		3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C21CF175A700300729 /* PlayerViewController.m */; };
 		3AAEF7C61CF1764400300729 /* beauty_ok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */; };
+		3AE77C301D7706A3006F004F /* WebviewHttpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE77C2F1D7706A3006F004F /* WebviewHttpsViewController.m */; };
 		A1A66D5A23CC12AFBCB3C2B8 /* libPods-DemoCollectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBB0A886F7A21785BD19B2E /* libPods-DemoCollectOC.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,8 @@
 		3AAEF7C11CF175A700300729 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		3AAEF7C21CF175A700300729 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beauty_ok.mp3; sourceTree = "<group>"; };
+		3AE77C2E1D7706A3006F004F /* WebviewHttpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebviewHttpsViewController.h; sourceTree = "<group>"; };
+		3AE77C2F1D7706A3006F004F /* WebviewHttpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebviewHttpsViewController.m; sourceTree = "<group>"; };
 		AFBB0A886F7A21785BD19B2E /* libPods-DemoCollectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoCollectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC528D3B3297D36F6FEE13BA /* Pods-DemoCollectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +164,8 @@
 				2A989F151D193677000E6803 /* WebpImageViewController.m */,
 				2ADA4E6E1D704C67004D8F2E /* CategoryTestViewController.h */,
 				2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */,
+				3AE77C2E1D7706A3006F004F /* WebviewHttpsViewController.h */,
+				3AE77C2F1D7706A3006F004F /* WebviewHttpsViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				2901541D1CAD0872009CA4FA /* AppDelegate.m in Sources */,
 				295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */,
 				290154321CAD08E4009CA4FA /* AppListViewController.m in Sources */,
+				3AE77C301D7706A3006F004F /* WebviewHttpsViewController.m in Sources */,
 				2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */,
 				2901541A1CAD0872009CA4FA /* main.m in Sources */,
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
