@@ -24,7 +24,7 @@
     _webview = [[UIWebView alloc] initWithFrame:self.view.bounds];
     _webview.delegate = self;
     [self.view addSubview:_webview];
-    url = @"https://www.baidu.com";
+    url = @"https://img.dmall.com/common/20c6fb04-f9d6-4082-9ad5-ca289e6a19af";
     _request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     [_webview loadRequest:_request];
 }
@@ -96,16 +96,16 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSLog(@"Did start loading: %@ auth:%d", [[request URL]absoluteString],_authenticated);
     
-    if (!_authenticated) {
-        
-        _authenticated =NO;
-        
-        NSURLSession *session = [NSURLSession sharedSession];
+//    if (!_authenticated) {
+//        
+//        _authenticated =NO;
+        NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration delegate:self delegateQueue:Nil];
         NSURLSessionDataTask *task = [session dataTaskWithRequest:_request];
         [task resume];
-        return NO;
-        
-    }
+//        return NO;
+    
+//    }
     
     return YES;
 }
@@ -131,20 +131,38 @@
 didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
  completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential * __nullable credential))completionHandler
 {
-    NSLog(@"challenge = %@",challenge.protectionSpace.serverTrust);
-    //判断是否是信任服务器证书
-    if (challenge.protectionSpace.authenticationMethod ==NSURLAuthenticationMethodServerTrust)
-    {
-        //创建一个凭据对象
-        NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
-        //告诉服务器客户端信任证书
-        [challenge.sender useCredential:credential forAuthenticationChallenge:challenge];
+    if ([[[challenge protectionSpace] authenticationMethod] isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+        SecTrustRef serverTrust = [[challenge protectionSpace] serverTrust];
+        if (serverTrust != NULL) {
+            OSStatus status = SecTrustEvaluate(serverTrust, NULL);
+            if(!(errSecSuccess == status)) {
+                completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
+                return;
+            }
+            
+//            NSData *localCertData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]
+//                                                                    pathForResource:@"random-org"
+//                                                                    ofType:@"der"]];
+            
+            SecCertificateRef remoteServerCert = SecTrustGetCertificateAtIndex(serverTrust, 0);
+            CFDataRef remoteCertData = SecCertificateCopyData(remoteServerCert);
+//            BOOL isMatch = [localCertData isEqualToData: (__bridge NSData *)remoteCertData];
+            CFRelease(remoteCertData);
+            [[challenge sender] useCredential:[NSURLCredential credentialForTrust:serverTrust] forAuthenticationChallenge:challenge];
+//            if (isMatch) {
+//                completionHandler(NSURLSessionAuthChallengeUseCredential, [NSURLCredential credentialForTrust:serverTrust]);
+//            } else {
+//                completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
+//            }
+        }
+    } else {
+        completionHandler(NSURLSessionAuthChallengePerformDefaultHandling, nil);
     }
 }
 
 -(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data
 {
-    [_webview loadRequest:_request];
+//    [_webview loadRequest:_request];
 }
 
 @end
