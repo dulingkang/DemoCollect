@@ -61,7 +61,20 @@ static NSString *URLProtocolHandledKey = @"URLHasHandle";
     [self.session invalidateAndCancel];
 }
 
-#pragma mark dataDelegate
+#pragma mark - dataDelegate
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task willPerformHTTPRedirection:(NSHTTPURLResponse *)response newRequest:(NSURLRequest *)newRequest completionHandler:(void (^)(NSURLRequest *))completionHandler
+{
+    NSMutableURLRequest *    redirectRequest;
+    
+    redirectRequest = [newRequest mutableCopy];
+    [[self class] removePropertyForKey:URLProtocolHandledKey inRequest:redirectRequest];
+    
+    [[self client] URLProtocol:self wasRedirectedToRequest:redirectRequest redirectResponse:response];
+    
+    [self.session invalidateAndCancel];
+    [[self client] URLProtocol:self didFailWithError:[NSError errorWithDomain:NSCocoaErrorDomain code:NSUserCancelledError userInfo:nil]];
+}
+
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition disposition))completionHandler
 {
     [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
