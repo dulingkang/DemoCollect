@@ -128,7 +128,7 @@
     NSLog(@"finish");
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error {
+- (void)webView:(UIWebView *)webView didFailLoadWithError:( NSError *)error {
     NSLog(@"***********error:%@,errorcode=%ld,errormessage:%@",error.domain,error.code,error.description);
     
     if (!([error.domain isEqualToString:@"WebKitErrorDomain"] && error.code ==102)) {

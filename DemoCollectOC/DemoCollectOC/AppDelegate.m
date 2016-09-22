@@ -10,11 +10,14 @@
 #import "JPEngine.h"
 #import "DMCustomURLSessionProtocol.h"
 
+#define kCachePath(cacheFolder) [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask,YES).firstObject stringByAppendingString:[NSString stringWithFormat:@"/%@", cacheFolder]]
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -31,7 +34,7 @@
 #else
     NSLog(@"this is iphone less than ios9");
 #endif
-    
+    NSLog(@">>>>>>:%@", kCachePath(@"test"));
     NSLog(@"%f", NSFoundationVersionNumber);
     if(NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_8_4) {
         NSLog(@"this is iphone more than ios9");
