@@ -24,7 +24,7 @@
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:imageView];
     [self addWebView];
-    // Do any additional setup after loading the view.
+    [self testFont];
 }
 
 - (void)addWebView {
@@ -35,19 +35,13 @@
     [self.view addSubview:self.webView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)testFont {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 80, 200, 60)];
+    label.text = @"Hello，你好你好";
+    label.font = [UIFont systemFontOfSize:17];
+    [label sizeToFit];
+    [self.view addSubview:label];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
