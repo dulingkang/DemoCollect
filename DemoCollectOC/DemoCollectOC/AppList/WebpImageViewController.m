@@ -25,6 +25,7 @@
     [self.view addSubview:imageView];
     [self addWebView];
     [self testFont];
+    [self createUrl];
 }
 
 - (void)addWebView {
@@ -43,5 +44,20 @@
     [self.view addSubview:label];
 }
 
+#define SobotUrl @"https://www.sobot.com/chat/h5/index.html"
+
+- (NSString *)createUrl {
+    NSURLComponents *components = [NSURLComponents componentsWithString:SobotUrl];
+    NSURLQueryItem *search = [NSURLQueryItem queryItemWithName:@"q" value:@"ios"];
+    NSURLQueryItem *count = [NSURLQueryItem queryItemWithName:@"count" value:@"10"];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"24334343", @"orderId", nil];
+    NSData *json = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil];
+    NSString *string = [[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding];
+    NSURLQueryItem *param = [NSURLQueryItem queryItemWithName:@"params" value:string];
+    components.queryItems = @[ search, count, param ];
+    NSURL *url = components.URL;
+    NSLog(@"%@", url.absoluteString);
+    return url.absoluteString;
+}
 
 @end
