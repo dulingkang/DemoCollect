@@ -23,6 +23,7 @@
 		2A62C4A11D7E6E00005ACFC6 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A62C4A01D7E6E00005ACFC6 /* test.html */; };
 		2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F151D193677000E6803 /* WebpImageViewController.m */; };
 		2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */; };
+		2AB0E4261DD1AEBA000E9731 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E4251DD1AEBA000E9731 /* RuntimeViewController.m */; };
 		2ACD60111CE4265500F9D17A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD60101CE4265500F9D17A /* main.js */; };
 		2ADA4E701D704C67004D8F2E /* CategoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
@@ -71,6 +72,8 @@
 		2A989F171D1A3A6E000E6803 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2A989F191D1A466F000E6803 /* DMCustomURLSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCustomURLSessionProtocol.h; sourceTree = "<group>"; };
 		2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCustomURLSessionProtocol.m; sourceTree = "<group>"; };
+		2AB0E4241DD1AEBA000E9731 /* RuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
+		2AB0E4251DD1AEBA000E9731 /* RuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		2AB3759E2907B9A84C5953E1 /* Pods-DemoCollectOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCollectOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoCollectOC/Pods-DemoCollectOC.release.xcconfig"; sourceTree = "<group>"; };
 		2ACD60101CE4265500F9D17A /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		2ADA4E6E1D704C67004D8F2E /* CategoryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTestViewController.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */,
 				3AE77C2E1D7706A3006F004F /* WebviewHttpsViewController.h */,
 				3AE77C2F1D7706A3006F004F /* WebviewHttpsViewController.m */,
+				2AB0E4241DD1AEBA000E9731 /* RuntimeViewController.h */,
+				2AB0E4251DD1AEBA000E9731 /* RuntimeViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */,
 				290154321CAD08E4009CA4FA /* AppListViewController.m in Sources */,
 				3AE77C301D7706A3006F004F /* WebviewHttpsViewController.m in Sources */,
+				2AB0E4261DD1AEBA000E9731 /* RuntimeViewController.m in Sources */,
 				2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */,
 				2901541A1CAD0872009CA4FA /* main.m in Sources */,
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
