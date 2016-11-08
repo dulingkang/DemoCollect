@@ -26,6 +26,7 @@
     [self addWebView];
     [self testFont];
     [self createUrl];
+    [self testDict];
 }
 
 - (void)addWebView {
@@ -38,10 +39,13 @@
 
 - (void)testFont {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 80, 200, 60)];
-    label.text = @"Hello，你好你好";
-    label.font = [UIFont systemFontOfSize:17];
+    label.text = @"11-20 12:09";
+    label.font = [UIFont systemFontOfSize:12];
     [label sizeToFit];
     [self.view addSubview:label];
+    if ([@"https://" hasPrefix:@"http"]) {
+        NSLog(@"222");
+    }
 }
 
 #define SobotUrl @"https://www.sobot.com/chat/h5/index.html"
@@ -60,4 +64,20 @@
     return url.absoluteString;
 }
 
+- (void)testDict {
+    NSMutableDictionary *dict = [NSMutableDictionary new];
+    NSDictionary *tmpDict = [NSDictionary dictionaryWithObjectsAndKeys:@"true",@"show1",@(1), @"show2", @(0), @"show3",  nil];
+    BOOL boolValue = NO;
+    id value = [tmpDict objectForKey:@"show3"];
+    if ([value isKindOfClass:[NSString class]]) {
+        if ([value isEqualToString:@"true"]) {
+            boolValue = YES;
+        }
+    } else if([value isKindOfClass:[NSNumber class]]) {
+        if ([value integerValue] == 1) {
+            boolValue = YES;
+        }
+    }
+    [dict setObject:[NSNumber numberWithBool:boolValue] forKey:@"test"];
+}
 @end
