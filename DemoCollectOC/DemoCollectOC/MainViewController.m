@@ -28,7 +28,8 @@
                     @"WebpImageViewController",
                     @"CategoryTestViewController",
                     @"WebviewHttpsViewController",
-                    @"RuntimeViewController"];
+                    @"RuntimeViewController",
+                    @"StringPropertyViewController"];
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
