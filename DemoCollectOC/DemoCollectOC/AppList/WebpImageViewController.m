@@ -27,6 +27,12 @@
     [self testFont];
     [self createUrl];
     [self testDict];
+    [self testTextView];
+    [self addTestButton];
+}
+
+- (void)testButtonPressed:(UIButton *)sender {
+    self.view.backgroundColor = [UIColor blueColor];
 }
 
 - (void)addWebView {
@@ -39,13 +45,26 @@
 
 - (void)testFont {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 80, 200, 60)];
-    label.text = @"11-20 12:09";
-    label.font = [UIFont systemFontOfSize:12];
+    label.text = @"60s后再次攻取";
+    label.font = [UIFont systemFontOfSize:11];
     [label sizeToFit];
     [self.view addSubview:label];
+    
+    NSMutableAttributedString *placeHolderString = [[NSMutableAttributedString alloc] initWithString:@"验证码"];
+    [placeHolderString addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName: [UIColor redColor]} range:NSMakeRange(0, placeHolderString.length)];
+    label.attributedText = placeHolderString;
     if ([@"https://" hasPrefix:@"http"]) {
         NSLog(@"222");
     }
+}
+
+- (void)testTextView {
+    UITextView *bottomTextView = [[UITextView alloc] initWithFrame:CGRectMake(25, 100, 50, 23.5)];
+    bottomTextView.textColor = [UIColor redColor];
+    bottomTextView.text = @"线下超市注册过";
+    bottomTextView.textContainerInset = UIEdgeInsetsMake(0, 0, 10, 0);
+    bottomTextView.font = [UIFont systemFontOfSize:11];
+    [self.view addSubview:bottomTextView];
 }
 
 #define SobotUrl @"https://www.sobot.com/chat/h5/index.html"
@@ -79,5 +98,13 @@
         }
     }
     [dict setObject:[NSNumber numberWithBool:boolValue] forKey:@"test"];
+}
+
+- (void)addTestButton {
+    UIButton *testButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    testButton.frame = CGRectMake(20, 130, 200, 40);
+    [testButton setTitle:@"test" forState:UIControlStateNormal];
+    [testButton addTarget:self action:@selector(testButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testButton];
 }
 @end

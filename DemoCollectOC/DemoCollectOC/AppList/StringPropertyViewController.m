@@ -22,6 +22,7 @@
 
 - (void)stringTest {
     NSMutableString *mutableStr = [NSMutableString stringWithFormat:@"https://"];
+//    NSString *mutableStr = @"a";
     self.myStrongString = mutableStr;
     self.myCopyString = mutableStr;
     NSLog(@"mutableStr:%p,%p",  mutableStr,&mutableStr);
@@ -31,6 +32,17 @@
     [mutableStr appendString:@"devthinking.com"];
     NSLog(@"strongString:%p,%p", _myStrongString, &_myStrongString);
     NSLog(@"copyString:%p,%p",   _myCopyString, &_myCopyString);
+    
+    
+    NSString *astr0 = @"0";
+    NSString * allocStr = [[NSString alloc]initWithFormat:@"1"];
+    NSString * formatStr = [NSString stringWithFormat:@"3"];
+    NSString * aStr = @"12";
+    NSString *astr2 = @"2";
+    
+    
+    NSLog(@"alloc : %@, forStr : %@,  aStr : %@",allocStr,formatStr,aStr);
+    
 }
 
 @end

@@ -9,13 +9,14 @@
 #import "GifDisplayViewController.h"
 
 @interface GifDisplayViewController ()
-
+@property (nonatomic, copy) NSString *testString;
 @end
 
 @implementation GifDisplayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.testString = @"test";
     self.view.backgroundColor = [UIColor whiteColor];
     [self displayGifView];
     NSLog(@"***********************");
@@ -28,5 +29,9 @@
     NSData *gifData = [NSData dataWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"anim" ofType:@"gif"]];
     [webView loadData: gifData  MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
     [self.view addSubview:webView];
+}
+
+- (void)testString:(NSString *)str {
+    NSLog(@"testString:%@", str);
 }
 @end
