@@ -15,7 +15,8 @@
 @implementation DemoButtonTest
 
 - (void)testDemoButton {
-    [self.app.buttons[@""] tap];
+    [self.app.tables.staticTexts[@"AppstoreEvaluateViewController"] tap];
+    [self.app.buttons[@"评价"] tap];
 }
 
 @end

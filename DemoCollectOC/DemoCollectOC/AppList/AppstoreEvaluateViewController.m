@@ -19,10 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(20, 70, 200, 50);
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame = CGRectMake(20, 70, 50, 50);
     [button setTitle:@"评价" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"login_icon_pass_highlight"] forState:UIControlStateNormal];
     [button addTarget: self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     // Do any additional setup after loading the view.
