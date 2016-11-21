@@ -21,6 +21,14 @@
 }
 
 - (void)stringTest {
+    Byte data[8];
+    Byte data2[] = {};
+    NSLog(@"dataAddress:%p", data);
+    NSLog(@"data2Address:%p", data2);
+    for (NSInteger i = 0; i < 8; i++) {
+        data[i] = i;
+        data2[i] = i;
+    }
     NSMutableString *mutableStr = [NSMutableString stringWithFormat:@"https://"];
 //    NSString *mutableStr = @"a";
     self.myStrongString = mutableStr;
