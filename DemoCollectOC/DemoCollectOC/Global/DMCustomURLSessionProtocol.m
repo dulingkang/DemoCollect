@@ -25,10 +25,12 @@ static NSString *URLProtocolHandledKey = @"URLHasHandle";
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request
 {
+    
     //只处理http和https请求
     NSString *scheme = [[request URL] scheme];
-    if ( ([scheme caseInsensitiveCompare:@"http"] == NSOrderedSame ||
-          [scheme caseInsensitiveCompare:@"https"] == NSOrderedSame))
+    if ( (([scheme caseInsensitiveCompare:@"http"] == NSOrderedSame ||
+           [scheme caseInsensitiveCompare:@"https"] == NSOrderedSame)) &&
+        ([scheme hasSuffix:@"webp"]))
     {
         //看看是否已经处理过了，防止无限循环
         if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
