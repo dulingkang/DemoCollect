@@ -30,7 +30,7 @@ static NSString *URLProtocolHandledKey = @"URLHasHandle";
     NSString *scheme = [[request URL] scheme];
     if ( (([scheme caseInsensitiveCompare:@"http"] == NSOrderedSame ||
            [scheme caseInsensitiveCompare:@"https"] == NSOrderedSame)) &&
-        ([scheme hasSuffix:@"webp"]))
+        ([[request.URL absoluteString] hasSuffix:@"webp"]))
     {
         //看看是否已经处理过了，防止无限循环
         if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {

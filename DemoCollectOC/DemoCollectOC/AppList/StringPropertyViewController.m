@@ -50,7 +50,6 @@
     
     
     NSLog(@"alloc : %@, forStr : %@,  aStr : %@",allocStr,formatStr,aStr);
-    
 }
 
 @end
