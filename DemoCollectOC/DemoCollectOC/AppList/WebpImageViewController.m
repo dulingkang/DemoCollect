@@ -9,6 +9,7 @@
 #import "WebpImageViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "DCGlobalDef.h"
+#import "UIControl+SSEventTime.h"
 
 @interface WebpImageViewController ()
 @property (nonatomic, strong) UIWebView *webView;
@@ -33,6 +34,7 @@
 
 - (void)testButtonPressed:(UIButton *)sender {
     self.view.backgroundColor = [UIColor blueColor];
+    NSLog(@">>>>>pressed");
 }
 
 - (void)addWebView {
@@ -105,6 +107,7 @@
     testButton.frame = CGRectMake(20, 130, 200, 40);
     [testButton setTitle:@"test" forState:UIControlStateNormal];
     [testButton addTarget:self action:@selector(testButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    testButton.eventInterval = 1;
     [self.view addSubview:testButton];
 }
 @end
