@@ -30,6 +30,8 @@
 		2ACAC0A01DFD2FC900C173CC /* UIControl+SSEventTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAC09F1DFD2FC900C173CC /* UIControl+SSEventTime.m */; };
 		2ACD60111CE4265500F9D17A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD60101CE4265500F9D17A /* main.js */; };
 		2ADA4E701D704C67004D8F2E /* CategoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */; };
+		2AFB4A951E0D20A5004F86CC /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB4A941E0D20A5004F86CC /* ResponderChainViewController.m */; };
+		2AFB4A981E0D2564004F86CC /* UIView+hitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB4A971E0D2564004F86CC /* UIView+hitTest.m */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
 		3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C21CF175A700300729 /* PlayerViewController.m */; };
 		3AAEF7C61CF1764400300729 /* beauty_ok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */; };
@@ -98,6 +100,10 @@
 		2ACD60101CE4265500F9D17A /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		2ADA4E6E1D704C67004D8F2E /* CategoryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTestViewController.h; sourceTree = "<group>"; };
 		2ADA4E6F1D704C67004D8F2E /* CategoryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTestViewController.m; sourceTree = "<group>"; };
+		2AFB4A931E0D20A5004F86CC /* ResponderChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponderChainViewController.h; sourceTree = "<group>"; };
+		2AFB4A941E0D20A5004F86CC /* ResponderChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
+		2AFB4A961E0D2564004F86CC /* UIView+hitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+hitTest.h"; sourceTree = "<group>"; };
+		2AFB4A971E0D2564004F86CC /* UIView+hitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+hitTest.m"; sourceTree = "<group>"; };
 		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
 		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
 		3AAEF7C11CF175A700300729 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
@@ -205,6 +211,8 @@
 				2AB0E4251DD1AEBA000E9731 /* RuntimeViewController.m */,
 				2AB0E4271DD2B595000E9731 /* StringPropertyViewController.h */,
 				2AB0E4281DD2B595000E9731 /* StringPropertyViewController.m */,
+				2AFB4A931E0D20A5004F86CC /* ResponderChainViewController.h */,
+				2AFB4A941E0D20A5004F86CC /* ResponderChainViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -259,6 +267,8 @@
 			children = (
 				2ACAC09E1DFD2FC900C173CC /* UIControl+SSEventTime.h */,
 				2ACAC09F1DFD2FC900C173CC /* UIControl+SSEventTime.m */,
+				2AFB4A961E0D2564004F86CC /* UIView+hitTest.h */,
+				2AFB4A971E0D2564004F86CC /* UIView+hitTest.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -483,6 +493,8 @@
 				2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */,
 				2901541A1CAD0872009CA4FA /* main.m in Sources */,
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
+				2AFB4A951E0D20A5004F86CC /* ResponderChainViewController.m in Sources */,
+				2AFB4A981E0D2564004F86CC /* UIView+hitTest.m in Sources */,
 				3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */,
 				2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */,
 			);
