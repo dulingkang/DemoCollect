@@ -10,29 +10,29 @@ import UIKit
 
 class AnchorPoint: UIViewController {
 
-    let point1 = CGPointMake(kScreenWidth/2, kScreenWidth/2)
+    let point1 = CGPoint(x: kScreenWidth/2, y: kScreenWidth/2)
     //MARK: - life cycle
     override func viewDidLoad() {
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = UIColor.white
         addSublayer()
         addViewAtPoint(point1)
     }
     
     
     //MARK: - private method
-    private func addSublayer() {
+    fileprivate func addSublayer() {
         let layer = CALayer()
-        layer.bounds = CGRectMake(0, 0, kScreenWidth/2, kScreenWidth/2)
-        layer.borderColor = UIColor.redColor().CGColor
+        layer.bounds = CGRect(x: 0, y: 0, width: kScreenWidth/2, height: kScreenWidth/2)
+        layer.borderColor = UIColor.red.cgColor
         layer.borderWidth = 1
         layer.position = point1
-        layer.anchorPoint = CGPointMake(0, 0.5)
+        layer.anchorPoint = CGPoint(x: 0, y: 0.5)
         view.layer.addSublayer(layer)
     }
     
-    private func addViewAtPoint(point: CGPoint) {
-        let pointView = UIView.init(frame: CGRectMake(point.x - 3, point.y - 3, 6, 6))
-        pointView.backgroundColor = UIColor.blueColor()
+    fileprivate func addViewAtPoint(_ point: CGPoint) {
+        let pointView = UIView.init(frame: CGRect(x: point.x - 3, y: point.y - 3, width: 6, height: 6))
+        pointView.backgroundColor = UIColor.blue
         pointView.layer.cornerRadius = 3
         view.addSubview(pointView)
     }

@@ -18,6 +18,11 @@
 }
 
 #pragma mark - life cycle
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     _classNames = @[@"AppListViewController",

@@ -8,5 +8,6 @@ pod 'CocoaLumberjack'
 pod 'JSPatch'
 pod 'SDWebImage'
 pod 'SDWebImage/WebP'
+pod 'lottie-ios'
 end
 

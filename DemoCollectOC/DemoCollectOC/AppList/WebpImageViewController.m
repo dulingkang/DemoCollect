@@ -10,6 +10,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "DCGlobalDef.h"
 #import "UIControl+SSEventTime.h"
+#import <lottie-ios/Lottie/Lottie.h>
 
 @interface WebpImageViewController ()
 @property (nonatomic, strong) UIWebView *webView;
@@ -17,13 +18,24 @@
 
 @implementation WebpImageViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth - 300)/2, 0, 300, 300)];
-    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.devthinking.com/test1.webp"]];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.devthinking.com/images/test1.webp"]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:imageView];
+//    [self.view addSubview:imageView];
+    LAAnimationView *animationView = [LAAnimationView animationNamed:@"PinJump"];
+    [self.view addSubview:animationView];
+    animationView.frame = CGRectMake((ScreenWidth - 300)/2, 0, 300, 300);
+    [animationView setLoopAnimation:YES];
+    [animationView playWithCompletion:^(BOOL animationFinished) {
+        
+    }];
     [self addWebView];
     [self testFont];
     [self createUrl];
@@ -46,8 +58,15 @@
 }
 
 - (void)testFont {
+    NSURL *url = [NSURL URLWithString:@"alipayfreedmall://DMAlipayFreePayPage?agreement_no=20170106682568206338&alipay_user_id=2088422478441387&external_user_id=2110&invalid_time=2115-02-01+00%3A00%3A00&is_success=T&product_code=GENERAL_WITHHOLDING_P&scene=DEFAULT%7CDEFAULT&sign_modify_time=2017-01-06+17%3A35%3A48&sign_time=2017-01-06+17%3A35%3A48&status=NORMAL&valid_time=2017-01-06+17%3A35%3A48&sign=JbaOTtUETDRJff9Te4LPtXezgxfyXXm%2FsWQ7C%2F9gsTtqxnTzZQKVqwORLemXd%2FXhCFtk5ek8aohOyyxhJznctcP4eZ%2FVQomxQTfG4HVCplUtGW%2BMweR1HLfEkcWJhNSgfsHavrjrgINUI2ktNf52gpu11tyfdAf0KpisUcfGp0c%3D&sign_type=RSA"];
+    NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+    NSArray *queryItems = [components queryItems];
+    NSMutableDictionary *dict = [NSMutableDictionary new];
+    for (NSURLQueryItem *item in queryItems) {
+        [dict setObject:[item value] forKey:[item name]];
+    }
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 80, 200, 60)];
-    label.text = @"60s后再次攻取";
+    label.text = @"今送到信信打飞";
     label.font = [UIFont systemFontOfSize:11];
     [label sizeToFit];
     [self.view addSubview:label];

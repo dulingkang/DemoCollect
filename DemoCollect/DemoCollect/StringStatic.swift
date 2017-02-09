@@ -8,17 +8,27 @@
 
 import UIKit
 
-class StringUtil {
-    static func test() {
-        print("my string util");
+class Car {
+    let make: String
+    
+    required init(make: String) {
+        self.make = make
     }
+    
+    var description: String {
+        return "\(make) is a \(type(of: self))."
+    }
+}
+
+class myLitterCar: Car {
+    
 }
 
 class StringStatic: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.white
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(StringStatic.viewTapped))
         self.view.addGestureRecognizer(tap)
 //        test()
@@ -27,10 +37,13 @@ class StringStatic: UIViewController {
     }
 
     func viewTapped() {
-//        let string = "StringUtil"
-//        let className = "DemoCollect" + "." + string
+        let string = "Car"
+        let className = "DemoCollect" + "." + string
 //        let selectorName = "test"
-//        let currentClass = NSClassFromString(className)! as NSObject.Type
+        if let currentClass = NSClassFromString(className) as? Car.Type {
+            let car = currentClass.init(make: "FirstCar")
+            car.description
+        }
 //        let selector: Selector = Selector(selectorName)
 //        if currentClass.respondsToSelector(selector) {
 //            currentClass.performSelector(selector)

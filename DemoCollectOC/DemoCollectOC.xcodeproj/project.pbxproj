@@ -23,6 +23,7 @@
 		2A2666F61DD9699500C4A0B3 /* DemoBaseUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2666F51DD9699500C4A0B3 /* DemoBaseUITest.m */; };
 		2A2666FA1DD969F700C4A0B3 /* DemoButtonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2666F91DD969F700C4A0B3 /* DemoButtonTest.m */; };
 		2A62C4A11D7E6E00005ACFC6 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A62C4A01D7E6E00005ACFC6 /* test.html */; };
+		2A8CEDD11E4C68C7003789DA /* PinJump.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CEDD01E4C68C7003789DA /* PinJump.json */; };
 		2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F151D193677000E6803 /* WebpImageViewController.m */; };
 		2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */; };
 		2AB0E4261DD1AEBA000E9731 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E4251DD1AEBA000E9731 /* RuntimeViewController.m */; };
@@ -85,6 +86,7 @@
 		2A2666F51DD9699500C4A0B3 /* DemoBaseUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBaseUITest.m; sourceTree = "<group>"; };
 		2A2666F91DD969F700C4A0B3 /* DemoButtonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoButtonTest.m; sourceTree = "<group>"; };
 		2A62C4A01D7E6E00005ACFC6 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		2A8CEDD01E4C68C7003789DA /* PinJump.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PinJump.json; sourceTree = "<group>"; };
 		2A989F141D193677000E6803 /* WebpImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebpImageViewController.h; sourceTree = "<group>"; };
 		2A989F151D193677000E6803 /* WebpImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebpImageViewController.m; sourceTree = "<group>"; };
 		2A989F171D1A3A6E000E6803 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -220,6 +222,7 @@
 		29576E0A1CCA2DA8001839BF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				2A8CEDD01E4C68C7003789DA /* PinJump.json */,
 				2A62C4A01D7E6E00005ACFC6 /* test.html */,
 				3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */,
 				29576E0B1CCA2DA8001839BF /* anim.gif */,
@@ -400,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29576E151CCA2DA8001839BF /* LaunchScreen.storyboard in Resources */,
+				2A8CEDD11E4C68C7003789DA /* PinJump.json in Resources */,
 				29576E141CCA2DA8001839BF /* Assets.xcassets in Resources */,
 				29576E181CCA2DA8001839BF /* start_ani.gif in Resources */,
 				29576E131CCA2DA8001839BF /* anim.gif in Resources */,
@@ -455,7 +459,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D7678CA2D793F6A688A95B78 /* [CP] Copy Pods Resources */ = {

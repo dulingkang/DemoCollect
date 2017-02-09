@@ -8,8 +8,8 @@
 
 import UIKit
 
-let kScreenWidth = UIScreen.mainScreen().bounds.size.width
-let kScreenHeight = UIScreen.mainScreen().bounds.size.height
+let kScreenWidth = UIScreen.main.bounds.size.width
+let kScreenHeight = UIScreen.main.bounds.size.height
 let kIphone4sHeight: CGFloat = 480
 let kIphone4sWidth: CGFloat = 320
 let kNavigationHeight: CGFloat = 44

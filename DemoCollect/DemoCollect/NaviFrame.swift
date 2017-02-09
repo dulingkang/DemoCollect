@@ -22,31 +22,31 @@ class NaviFrame: UIViewController, UITableViewDataSource {
     
     //MARK: - life cycle
     override func viewDidLoad() {
-        self.navigationController?.navigationBar.translucent = true
-        view.backgroundColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.isTranslucent = true
+        view.backgroundColor = UIColor.white
         addTableView()
     }
     
     //MARK: - tableView datasource
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nameArray.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "SSNaviFrameCell"
-        var cell = tableView.dequeueReusableCellWithIdentifier(identifier)
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         if (cell == nil) {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: identifier)
+            cell = UITableViewCell(style: .default, reuseIdentifier: identifier)
         }
         cell?.textLabel?.text = nameArray[indexPath.row]
-        cell?.contentView.backgroundColor = UIColor.blueColor()
+        cell?.contentView.backgroundColor = UIColor.blue
         return cell!
     }
     
     //MARK: - private method
-    private func addTableView() {
-        let tableView = UITableView(frame: CGRectMake(0, 0, kScreenWidth, kScreenHeight), style: .Plain)
-        tableView.layer.borderColor = UIColor.redColor().CGColor
+    fileprivate func addTableView() {
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: .plain)
+        tableView.layer.borderColor = UIColor.red.cgColor
         tableView.layer.borderWidth = 1
         tableView.dataSource = self
         view.addSubview(tableView)

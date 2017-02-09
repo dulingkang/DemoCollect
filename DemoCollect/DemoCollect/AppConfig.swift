@@ -15,9 +15,9 @@ struct AppConfig {
             let instance = aspectInfo.instance() as? UIViewController
             instance?.SSViewDidLoad()
             }
-        let wrappedObject: AnyObject = unsafeBitCast(wrappedBlock, AnyObject.self)
+        let wrappedObject: AnyObject = unsafeBitCast(wrappedBlock, to: AnyObject.self)
         do {
-            try UIViewController.aspect_hookSelector("viewDidLoad", withOptions: .PositionAfter, usingBlock: wrappedObject)
+            try UIViewController.aspect_hook(#selector(UIViewController.viewDidLoad), with: AspectOptions(), usingBlock: wrappedObject)
         } catch {
             print(error)
         }
@@ -26,12 +26,12 @@ struct AppConfig {
 
 extension UIViewController {    
     func SSViewDidLoad() {
-        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.navigationBar.isTranslucent = true
         print("SSViewDidLoad")
 //        self.view.backgroundColor = UIColor.greenColor()
         self.navigationController?.title = self.theClassName
-        if self.respondsToSelector("edgesForExtendedLayout") {
-            self.edgesForExtendedLayout = .None
+        if self.responds(to: #selector(getter: UIViewController.edgesForExtendedLayout)) {
+            self.edgesForExtendedLayout = UIRectEdge()
         }
     }
 }
