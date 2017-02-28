@@ -74,6 +74,15 @@ static int64_t _YYDeviceMemoryFree() {
     NSLog(@"total:%lf", _YYDeviceMemoryTotal()/1024.0/1024.0);
     NSLog(@"free:%lf", _YYDeviceMemoryFree()/1024.0/1024.0);
     
+    
+    CFRunLoopRef runLoop = CFRunLoopGetCurrent();
+    CFStringRef runLoopMode = kCFRunLoopDefaultMode;
+    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler
+    (kCFAllocatorDefault, kCFRunLoopBeforeWaiting, true, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity _) {
+        NSLog(@"test");
+    });
+    CFRunLoopAddObserver(runLoop, observer, runLoopMode);
+    
     return YES;
 }
 
