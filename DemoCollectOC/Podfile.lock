@@ -1,15 +1,13 @@
 PODS:
-  - CocoaLumberjack (3.0.0):
-    - CocoaLumberjack/Default (= 3.0.0)
-    - CocoaLumberjack/Extensions (= 3.0.0)
-  - CocoaLumberjack/Core (3.0.0)
-  - CocoaLumberjack/Default (3.0.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (3.0.0):
+  - CocoaLumberjack (3.1.0):
+    - CocoaLumberjack/Default (= 3.1.0)
+    - CocoaLumberjack/Extensions (= 3.1.0)
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Extensions (3.1.0):
     - CocoaLumberjack/Default
-  - JSPatch (1.1.2):
-    - JSPatch/Core (= 1.1.2)
-  - JSPatch/Core (1.1.2)
+  - JSPatch (1.1.3):
+    - JSPatch/Core (= 1.1.3)
+  - JSPatch/Core (1.1.3)
   - libwebp (0.5.1):
     - libwebp/core (= 0.5.1)
     - libwebp/dec (= 0.5.1)
@@ -34,7 +32,7 @@ PODS:
   - libwebp/utils (0.5.1):
     - libwebp/core
   - libwebp/webp (0.5.1)
-  - lottie-ios (1.0.0)
+  - lottie-ios (1.5.1)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -50,12 +48,12 @@ DEPENDENCIES:
   - SDWebImage/WebP
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
-  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
+  JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
-  lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
+  lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
 PODFILE CHECKSUM: 70adef28a9314cc9b656a1bb4254455d53361fe5
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.0.0
