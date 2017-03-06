@@ -29,7 +29,7 @@
     [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.devthinking.com/images/test1.webp"]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
 //    [self.view addSubview:imageView];
-    LAAnimationView *animationView = [LAAnimationView animationNamed:@"PinJump"];
+    LOTAnimationView *animationView = [LOTAnimationView animationNamed:@"PinJump"];
     [self.view addSubview:animationView];
     animationView.frame = CGRectMake((ScreenWidth - 300)/2, 0, 300, 300);
     [animationView setLoopAnimation:YES];

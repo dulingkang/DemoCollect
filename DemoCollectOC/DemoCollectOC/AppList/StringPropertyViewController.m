@@ -19,8 +19,10 @@
     [super viewDidLoad];
     [self stringTest];
 }
+static NSString *constString1 = @"11111";
 
 - (void)stringTest {
+    static NSString *constString = @"22222";
     Byte data[8];
     Byte data2[] = {};
     NSLog(@"dataAddress:%p", data);
