@@ -22,8 +22,11 @@
     
 }
 
+static NSString *constString1 = @"66666";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"constString1:%@", constString1);
     self.view.backgroundColor = [UIColor whiteColor];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth - 300)/2, 0, 300, 300)];
     [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.devthinking.com/images/test1.webp"]];

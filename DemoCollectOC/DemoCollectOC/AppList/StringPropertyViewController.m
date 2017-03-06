@@ -20,6 +20,7 @@
     [self stringTest];
 }
 static NSString *constString1 = @"11111";
+NSString *constString2 = @"3333";
 
 - (void)stringTest {
     static NSString *constString = @"22222";
