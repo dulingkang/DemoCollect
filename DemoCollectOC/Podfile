@@ -9,5 +9,6 @@ pod 'JSPatch'
 pod 'SDWebImage'
 pod 'SDWebImage/WebP'
 pod 'lottie-ios'
+pod 'Aspects'
 end
 

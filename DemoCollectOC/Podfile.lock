@@ -1,4 +1,5 @@
 PODS:
+  - Aspects (1.4.1)
   - CocoaLumberjack (3.1.0):
     - CocoaLumberjack/Default (= 3.1.0)
     - CocoaLumberjack/Extensions (= 3.1.0)
@@ -41,6 +42,7 @@ PODS:
     - SDWebImage/Core
 
 DEPENDENCIES:
+  - Aspects
   - CocoaLumberjack
   - JSPatch
   - lottie-ios
@@ -48,12 +50,13 @@ DEPENDENCIES:
   - SDWebImage/WebP
 
 SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
   lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 70adef28a9314cc9b656a1bb4254455d53361fe5
+PODFILE CHECKSUM: 23517bebdccd7278eabb655a5d814bbe754f246d
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.2.0

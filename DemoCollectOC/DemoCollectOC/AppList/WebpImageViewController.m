@@ -54,7 +54,7 @@ static NSString *constString1 = @"66666";
 
 - (void)addWebView {
     self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 300, ScreenWidth, ScreenHeight - 300)];
-    NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.devthinking.com/test.html"]];
+    NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://devthinking.com/testWebp.html"]];
     // 3.加载网页
     [self.webView loadRequest:request];
     [self.view addSubview:self.webView];
@@ -69,7 +69,7 @@ static NSString *constString1 = @"66666";
         [dict setObject:[item value] forKey:[item name]];
     }
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 80, 200, 60)];
-    label.text = @"今送到信信打飞";
+    label.text = @"今送";
     label.font = [UIFont systemFontOfSize:11];
     [label sizeToFit];
     [self.view addSubview:label];

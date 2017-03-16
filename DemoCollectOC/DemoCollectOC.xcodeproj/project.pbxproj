@@ -23,6 +23,8 @@
 		2A2666F61DD9699500C4A0B3 /* DemoBaseUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2666F51DD9699500C4A0B3 /* DemoBaseUITest.m */; };
 		2A2666FA1DD969F700C4A0B3 /* DemoButtonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2666F91DD969F700C4A0B3 /* DemoButtonTest.m */; };
 		2A62C4A11D7E6E00005ACFC6 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A62C4A01D7E6E00005ACFC6 /* test.html */; };
+		2A7E22EE1E73E38300E1D616 /* UIViewController+SSReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E22ED1E73E38300E1D616 /* UIViewController+SSReport.m */; };
+		2A7E22F11E73E6A800E1D616 /* AppDelegate+Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E22F01E73E6A800E1D616 /* AppDelegate+Report.m */; };
 		2A8CEDD11E4C68C7003789DA /* PinJump.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CEDD01E4C68C7003789DA /* PinJump.json */; };
 		2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F151D193677000E6803 /* WebpImageViewController.m */; };
 		2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A989F1A1D1A466F000E6803 /* DMCustomURLSessionProtocol.m */; };
@@ -86,6 +88,10 @@
 		2A2666F51DD9699500C4A0B3 /* DemoBaseUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBaseUITest.m; sourceTree = "<group>"; };
 		2A2666F91DD969F700C4A0B3 /* DemoButtonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoButtonTest.m; sourceTree = "<group>"; };
 		2A62C4A01D7E6E00005ACFC6 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		2A7E22EC1E73E38300E1D616 /* UIViewController+SSReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SSReport.h"; sourceTree = "<group>"; };
+		2A7E22ED1E73E38300E1D616 /* UIViewController+SSReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SSReport.m"; sourceTree = "<group>"; };
+		2A7E22EF1E73E6A800E1D616 /* AppDelegate+Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Report.h"; sourceTree = "<group>"; };
+		2A7E22F01E73E6A800E1D616 /* AppDelegate+Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Report.m"; sourceTree = "<group>"; };
 		2A8CEDD01E4C68C7003789DA /* PinJump.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PinJump.json; sourceTree = "<group>"; };
 		2A989F141D193677000E6803 /* WebpImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebpImageViewController.h; sourceTree = "<group>"; };
 		2A989F151D193677000E6803 /* WebpImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebpImageViewController.m; sourceTree = "<group>"; };
@@ -272,6 +278,10 @@
 				2ACAC09F1DFD2FC900C173CC /* UIControl+SSEventTime.m */,
 				2AFB4A961E0D2564004F86CC /* UIView+hitTest.h */,
 				2AFB4A971E0D2564004F86CC /* UIView+hitTest.m */,
+				2A7E22EC1E73E38300E1D616 /* UIViewController+SSReport.h */,
+				2A7E22ED1E73E38300E1D616 /* UIViewController+SSReport.m */,
+				2A7E22EF1E73E6A800E1D616 /* AppDelegate+Report.h */,
+				2A7E22F01E73E6A800E1D616 /* AppDelegate+Report.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -301,7 +311,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2901542C1CAD0872009CA4FA /* Build configuration list for PBXNativeTarget "DemoCollectOC" */;
 			buildPhases = (
-				580BFADAB7558192EEEFE712 /* 📦 Check Pods Manifest.lock */,
+				580BFADAB7558192EEEFE712 /* [CP] Check Pods Manifest.lock */,
 				51C60F742FBD334C0A2CE2F4 /* [CP] Check Pods Manifest.lock */,
 				290154111CAD0872009CA4FA /* Sources */,
 				290154121CAD0872009CA4FA /* Frameworks */,
@@ -495,19 +505,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		580BFADAB7558192EEEFE712 /* 📦 Check Pods Manifest.lock */ = {
+		580BFADAB7558192EEEFE712 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D7678CA2D793F6A688A95B78 /* [CP] Copy Pods Resources */ = {
@@ -532,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7E22EE1E73E38300E1D616 /* UIViewController+SSReport.m in Sources */,
 				2ACAC0A01DFD2FC900C173CC /* UIControl+SSEventTime.m in Sources */,
 				2A989F1B1D1A466F000E6803 /* DMCustomURLSessionProtocol.m in Sources */,
 				2ADA4E701D704C67004D8F2E /* CategoryTestViewController.m in Sources */,
@@ -547,6 +558,7 @@
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
 				2AFB4A951E0D20A5004F86CC /* ResponderChainViewController.m in Sources */,
 				2AFB4A981E0D2564004F86CC /* UIView+hitTest.m in Sources */,
+				2A7E22F11E73E6A800E1D616 /* AppDelegate+Report.m in Sources */,
 				3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */,
 				2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */,
 			);

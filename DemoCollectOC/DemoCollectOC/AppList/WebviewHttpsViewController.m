@@ -136,7 +136,7 @@
         //当请求出错了会做什么事情
     }
 }
-//
+
 //- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
 //didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
 // completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential * __nullable credential))completionHandler
