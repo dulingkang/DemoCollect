@@ -79,7 +79,7 @@ static int64_t _YYDeviceMemoryFree() {
     CFStringRef runLoopMode = kCFRunLoopDefaultMode;
     CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler
     (kCFAllocatorDefault, kCFRunLoopBeforeWaiting, true, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity _) {
-        NSLog(@"test");
+//        NSLog(@"main loop is idle");
     });
     CFRunLoopAddObserver(runLoop, observer, runLoopMode);
     

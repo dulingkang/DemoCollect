@@ -35,7 +35,8 @@
                     @"WebviewHttpsViewController",
                     @"RuntimeViewController",
                     @"StringPropertyViewController",
-                    @"ResponderChainViewController"];
+                    @"ResponderChainViewController",
+                    @"SyncViewController"];
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;

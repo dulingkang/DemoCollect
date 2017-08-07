@@ -11,6 +11,8 @@
 		2901541D1CAD0872009CA4FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2901541C1CAD0872009CA4FA /* AppDelegate.m */; };
 		290154321CAD08E4009CA4FA /* AppListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290154311CAD08E4009CA4FA /* AppListViewController.m */; };
 		290154351CAD0938009CA4FA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290154341CAD0938009CA4FA /* MainViewController.m */; };
+		2951F92E1F38637500A89423 /* SyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2951F92D1F38637500A89423 /* SyncViewController.m */; };
+		2951F9341F38681D00A89423 /* UIViewController+SSViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2951F9331F38681D00A89423 /* UIViewController+SSViewConfigure.m */; };
 		29576E131CCA2DA8001839BF /* anim.gif in Resources */ = {isa = PBXBuildFile; fileRef = 29576E0B1CCA2DA8001839BF /* anim.gif */; };
 		29576E141CCA2DA8001839BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29576E0C1CCA2DA8001839BF /* Assets.xcassets */; };
 		29576E151CCA2DA8001839BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29576E0D1CCA2DA8001839BF /* LaunchScreen.storyboard */; };
@@ -68,6 +70,10 @@
 		290154311CAD08E4009CA4FA /* AppListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListViewController.m; sourceTree = "<group>"; };
 		290154331CAD0938009CA4FA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		290154341CAD0938009CA4FA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2951F92C1F38637500A89423 /* SyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncViewController.h; sourceTree = "<group>"; };
+		2951F92D1F38637500A89423 /* SyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncViewController.m; sourceTree = "<group>"; };
+		2951F9321F38681D00A89423 /* UIViewController+SSViewConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SSViewConfigure.h"; sourceTree = "<group>"; };
+		2951F9331F38681D00A89423 /* UIViewController+SSViewConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SSViewConfigure.m"; sourceTree = "<group>"; };
 		29576E0B1CCA2DA8001839BF /* anim.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anim.gif; sourceTree = "<group>"; };
 		29576E0C1CCA2DA8001839BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29576E0E1CCA2DA8001839BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -221,6 +227,8 @@
 				2AB0E4281DD2B595000E9731 /* StringPropertyViewController.m */,
 				2AFB4A931E0D20A5004F86CC /* ResponderChainViewController.h */,
 				2AFB4A941E0D20A5004F86CC /* ResponderChainViewController.m */,
+				2951F92C1F38637500A89423 /* SyncViewController.h */,
+				2951F92D1F38637500A89423 /* SyncViewController.m */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -282,6 +290,8 @@
 				2A7E22ED1E73E38300E1D616 /* UIViewController+SSReport.m */,
 				2A7E22EF1E73E6A800E1D616 /* AppDelegate+Report.h */,
 				2A7E22F01E73E6A800E1D616 /* AppDelegate+Report.m */,
+				2951F9321F38681D00A89423 /* UIViewController+SSViewConfigure.h */,
+				2951F9331F38681D00A89423 /* UIViewController+SSViewConfigure.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -553,10 +563,12 @@
 				3AE77C301D7706A3006F004F /* WebviewHttpsViewController.m in Sources */,
 				2AB0E4261DD1AEBA000E9731 /* RuntimeViewController.m in Sources */,
 				2AB0E4291DD2B595000E9731 /* StringPropertyViewController.m in Sources */,
+				2951F9341F38681D00A89423 /* UIViewController+SSViewConfigure.m in Sources */,
 				2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */,
 				2901541A1CAD0872009CA4FA /* main.m in Sources */,
 				290154351CAD0938009CA4FA /* MainViewController.m in Sources */,
 				2AFB4A951E0D20A5004F86CC /* ResponderChainViewController.m in Sources */,
+				2951F92E1F38637500A89423 /* SyncViewController.m in Sources */,
 				2AFB4A981E0D2564004F86CC /* UIView+hitTest.m in Sources */,
 				2A7E22F11E73E6A800E1D616 /* AppDelegate+Report.m in Sources */,
 				3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */,
