@@ -12,7 +12,7 @@
 #import <libkern/OSAtomic.h>
 #import <pthread.h>
 
-static NSInteger const kLoopCount = 2^64;
+static long long const kLoopCount = 1000000;
 
 @interface SyncViewController ()
 
@@ -22,22 +22,19 @@ static NSInteger const kLoopCount = 2^64;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSTimeInterval past = 1;
+    
+    NSTimeInterval past = 0;
     NSTimeInterval now = 0;
     NSInteger i = 0;
     id obj = [NSObject new];
-    dispatch_queue_t queue = dispatch_queue_create("com.shawn.barrier", DISPATCH_QUEUE_CONCURRENT);
     
+    dispatch_queue_t queue = dispatch_queue_create("com.shawn.Sync", DISPATCH_QUEUE_CONCURRENT);
     past = CFAbsoluteTimeGetCurrent();
-    for (i = 0; i < kLoopCount; i++) {
-        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-        dispatch_async(queue, ^{
-            dispatch_semaphore_signal(semaphore);
-        });
-        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    for(i = 0;i < kLoopCount; i++) {
+        dispatch_barrier_async(queue, ^{});
     }
     now = CFAbsoluteTimeGetCurrent();
-    NSLog(@"dispatch_semaphore: %f", now - past);
+    NSLog(@"dispatch_barrier_async: %f", now - past);
     
     past = CFAbsoluteTimeGetCurrent();
     for (i = 0; i < kLoopCount; i++) {
@@ -52,11 +49,15 @@ static NSInteger const kLoopCount = 2^64;
     NSLog(@"whileLoop: %f", now - past);
     
     past = CFAbsoluteTimeGetCurrent();
-    for(i = 0;i < kLoopCount; i++) {
-        dispatch_barrier_async(queue, ^{});
+    for (i = 0; i < kLoopCount; i++) {
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+        dispatch_async(queue, ^{
+            dispatch_semaphore_signal(semaphore);
+        });
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
     }
     now = CFAbsoluteTimeGetCurrent();
-    NSLog(@"dispatch_barrier_async: %f", now - past);
+    NSLog(@"dispatch_semaphore: %f", now - past);
     
     past = CFAbsoluteTimeGetCurrent();
     for (i = 0; i < kLoopCount; i++) {
