@@ -40,6 +40,7 @@ PODS:
   - SDWebImage/WebP (4.0.0):
     - libwebp
     - SDWebImage/Core
+  - WCDB (1.0.4)
 
 DEPENDENCIES:
   - Aspects
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - lottie-ios
   - SDWebImage
   - SDWebImage/WebP
+  - WCDB
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
@@ -56,7 +58,8 @@ SPEC CHECKSUMS:
   libwebp: 1d5a07c2eb97f9c31bd5f154bb82efc0ea67c6a2
   lottie-ios: 255a0e95973a5c4424e809d7a5c19f7384c73e84
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  WCDB: 238cc52f3994038f42a66f9a0c23da1dd97399ae
 
-PODFILE CHECKSUM: 23517bebdccd7278eabb655a5d814bbe754f246d
+PODFILE CHECKSUM: a1f0639ce5039a1e36a70ca5017215a314cefa85
 
 COCOAPODS: 1.2.1

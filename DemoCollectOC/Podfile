@@ -10,5 +10,6 @@ pod 'SDWebImage'
 pod 'SDWebImage/WebP'
 pod 'lottie-ios'
 pod 'Aspects'
+pod 'WCDB'
 end
 
