@@ -21,7 +21,9 @@
 		29576E181CCA2DA8001839BF /* start_ani.gif in Resources */ = {isa = PBXBuildFile; fileRef = 29576E121CCA2DA8001839BF /* start_ani.gif */; };
 		295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */; };
 		297D9BD11F5E930600E5751A /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297D9BD01F5E930600E5751A /* URLSessionViewController.m */; };
-		29DF1A371F7A4C400061A27E /* WCDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF1A361F7A4C400061A27E /* WCDBViewController.m */; };
+		29D62E861F7B3C120058E0F2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D62E851F7B3C120058E0F2 /* libc++.tbd */; };
+		29D62E881F7B3C2D0058E0F2 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D62E871F7B3C2D0058E0F2 /* libstdc++.tbd */; };
+		29DF1A371F7A4C400061A27E /* WCDBViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29DF1A361F7A4C400061A27E /* WCDBViewController.mm */; };
 		29DF1A3B1F7A4F690061A27E /* Message.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29DF1A3A1F7A4F690061A27E /* Message.mm */; };
 		2A14C4971CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4961CD1B9FA00631CB9 /* AppstoreEvaluateViewController.m */; };
 		2A14C4A41CD1EACA00631CB9 /* DemoCollectOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14C4A31CD1EACA00631CB9 /* DemoCollectOCTests.m */; };
@@ -88,8 +90,10 @@
 		295C4CF81CB3616E0050A5DA /* GifDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDisplayViewController.m; sourceTree = "<group>"; };
 		297D9BCF1F5E930600E5751A /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
 		297D9BD01F5E930600E5751A /* URLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionViewController.m; sourceTree = "<group>"; };
+		29D62E851F7B3C120058E0F2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		29D62E871F7B3C2D0058E0F2 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		29DF1A351F7A4C400061A27E /* WCDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCDBViewController.h; sourceTree = "<group>"; };
-		29DF1A361F7A4C400061A27E /* WCDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCDBViewController.m; sourceTree = "<group>"; };
+		29DF1A361F7A4C400061A27E /* WCDBViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WCDBViewController.mm; sourceTree = "<group>"; };
 		29DF1A391F7A4F690061A27E /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		29DF1A3A1F7A4F690061A27E /* Message.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Message.mm; sourceTree = "<group>"; };
 		2A14C4951CD1B9FA00631CB9 /* AppstoreEvaluateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppstoreEvaluateViewController.h; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D62E881F7B3C2D0058E0F2 /* libstdc++.tbd in Frameworks */,
+				29D62E861F7B3C120058E0F2 /* libc++.tbd in Frameworks */,
 				A1A66D5A23CC12AFBCB3C2B8 /* libPods-DemoCollectOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +248,7 @@
 				297D9BCF1F5E930600E5751A /* URLSessionViewController.h */,
 				297D9BD01F5E930600E5751A /* URLSessionViewController.m */,
 				29DF1A351F7A4C400061A27E /* WCDBViewController.h */,
-				29DF1A361F7A4C400061A27E /* WCDBViewController.m */,
+				29DF1A361F7A4C400061A27E /* WCDBViewController.mm */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -322,6 +328,8 @@
 		5C4AD4FEC41EAD79DA834D15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29D62E871F7B3C2D0058E0F2 /* libstdc++.tbd */,
+				29D62E851F7B3C120058E0F2 /* libc++.tbd */,
 				2A989F171D1A3A6E000E6803 /* WebKit.framework */,
 				AFBB0A886F7A21785BD19B2E /* libPods-DemoCollectOC.a */,
 			);
@@ -598,7 +606,7 @@
 				2A7E22F11E73E6A800E1D616 /* AppDelegate+Report.m in Sources */,
 				3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */,
 				2A989F161D193677000E6803 /* WebpImageViewController.m in Sources */,
-				29DF1A371F7A4C400061A27E /* WCDBViewController.m in Sources */,
+				29DF1A371F7A4C400061A27E /* WCDBViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

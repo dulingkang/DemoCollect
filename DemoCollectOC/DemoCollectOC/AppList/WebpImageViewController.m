@@ -50,6 +50,7 @@ static NSString *constString1 = @"66666";
 - (void)testButtonPressed:(UIButton *)sender {
     self.view.backgroundColor = [UIColor blueColor];
     NSLog(@">>>>>pressed");
+    NSLog(@"call: %@", [NSThread callStackSymbols]);
 }
 
 - (void)addWebView {
