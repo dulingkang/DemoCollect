@@ -93,4 +93,40 @@
     return needShow;
 }
 
+
+- (void)testProcessLinkJumpToCMBMobileBankURL {
+    NSURL *url1 = [NSURL URLWithString:@"http://cmbls/FunctionJump?id=1&action=gofunid&cmb_app_trans_parms_start=here&Tr=false"];
+    NSURL *url2 = [NSURL URLWithString:@"http://cmbls/FunctionJump?clean=true&action=gofunid&cmb_app_trans_parms_start=here&Tr=false"];
+    NSURL *url3 = [NSURL URLWithString:@"http://cmbls/FunctionJump?action=gofunid&clean=true&cmb_app_trans_parms_start=here&Tr=false"];
+    NSURL *url4 = [NSURL URLWithString:@"http://cmbls/FunctionJump?action=gofunid&Tr=false"];
+    NSLog(@"%@\n,%@\n,%@\n,%@\n", [self processLinkJumpToCMBMobileBankURL:url1], [self processLinkJumpToCMBMobileBankURL:url2], [self processLinkJumpToCMBMobileBankURL:url3], [self processLinkJumpToCMBMobileBankURL:url4]);
+    
+}
+
+- (NSURL *)processLinkJumpToCMBMobileBankURL:(NSURL *)url {
+    NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+    NSArray *queryItems = [components queryItems];
+    NSMutableArray *queryMutableItems = [NSMutableArray arrayWithArray:queryItems];
+    BOOL findClean = NO;
+    BOOL findCmbAppTrans = NO;
+    for (NSURLQueryItem *item in queryItems) {
+        if ([item.name isEqualToString:@"clean"]) {
+            findClean = YES;
+        } else if ([item.name isEqualToString:@"cmb_app_trans_parms_start"]) {
+            findCmbAppTrans = YES;
+        }
+    }
+    if (!findClean) {
+        NSURLQueryItem *cleanQueryItem = [NSURLQueryItem queryItemWithName:@"clean" value:@"false"];
+        [queryMutableItems insertObject:cleanQueryItem atIndex:0];
+    }
+    if (!findCmbAppTrans) {
+        NSURLQueryItem *cleanQueryItem = [NSURLQueryItem queryItemWithName:@"cmb_app_trans_parms_start" value:@"here"];
+        [queryMutableItems addObject:cleanQueryItem];
+    }
+    NSURLQueryItem *openIdQueryItem = [NSURLQueryItem queryItemWithName:@"openid" value:@"123456"];
+    [queryMutableItems addObject:openIdQueryItem];
+    components.queryItems = queryMutableItems;
+    return components.URL;
+}
 @end

@@ -71,7 +71,7 @@ static NSString *constString1 = @"66666";
     }
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 80, 200, 60)];
     label.text = @"今送";
-    label.font = [UIFont systemFontOfSize:11];
+    label.font = [UIFont systemFontOfSize:18];
     [label sizeToFit];
     [self.view addSubview:label];
     
