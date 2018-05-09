@@ -15,7 +15,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         get{
             return ["AnchorPoint",
                 "NaviFrame",
-                "StringStatic"
+                "StringStatic",
+                "PriceChoose",
+                "PathAnimation"
             ]
         }
     }

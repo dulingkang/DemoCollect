@@ -7,21 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AB2B0921D34D49600CB15EA /* StringStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2B0911D34D49600CB15EA /* StringStatic.swift */; };
 		3A0533E21C984AFB00BC8417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0533E11C984AFB00BC8417 /* AppDelegate.swift */; };
 		3A0533E71C984AFB00BC8417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0533E51C984AFB00BC8417 /* Main.storyboard */; };
 		3A0533E91C984AFB00BC8417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0533E81C984AFB00BC8417 /* Assets.xcassets */; };
 		3A0533EC1C984AFB00BC8417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0533EA1C984AFB00BC8417 /* LaunchScreen.storyboard */; };
 		3A0533F41C984C2300BC8417 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0533F31C984C2300BC8417 /* MainViewController.swift */; };
-		3A0533F71C98532F00BC8417 /* AnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0533F61C98532F00BC8417 /* AnchorPoint.swift */; };
-		3A0533F91C9859DA00BC8417 /* GlobalDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0533F81C9859DA00BC8417 /* GlobalDef.swift */; };
-		3A0533FE1C98EE9600BC8417 /* NaviFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0533FD1C98EE9600BC8417 /* NaviFrame.swift */; };
-		3A0534001C98F73100BC8417 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0533FF1C98F73100BC8417 /* AppConfig.swift */; };
-		3A0534021C98F82E00BC8417 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0534011C98F82E00BC8417 /* Extention.swift */; };
+		3A3E92282091FA3F00DEF45D /* StringStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E921F2091FA3F00DEF45D /* StringStatic.swift */; };
+		3A3E92292091FA3F00DEF45D /* PriceChoose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92202091FA3F00DEF45D /* PriceChoose.swift */; };
+		3A3E922A2091FA3F00DEF45D /* NaviFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92212091FA3F00DEF45D /* NaviFrame.swift */; };
+		3A3E922B2091FA3F00DEF45D /* AnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92222091FA3F00DEF45D /* AnchorPoint.swift */; };
+		3A3E922C2091FA3F00DEF45D /* GlobalDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92242091FA3F00DEF45D /* GlobalDef.swift */; };
+		3A3E922D2091FA3F00DEF45D /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92252091FA3F00DEF45D /* Extention.swift */; };
+		3A3E922E2091FA3F00DEF45D /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92262091FA3F00DEF45D /* AppConfig.swift */; };
+		3A3E92312091FA8F00DEF45D /* PriceChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92302091FA8F00DEF45D /* PriceChooseView.swift */; };
+		3A3E92372091FC8A00DEF45D /* PriceChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3E92362091FC8A00DEF45D /* PriceChooseView.xib */; };
+		3A8CFF32209B111800661DE6 /* PathAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CFF31209B111800661DE6 /* PathAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AB2B0911D34D49600CB15EA /* StringStatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringStatic.swift; sourceTree = "<group>"; };
 		3A0533DE1C984AFA00BC8417 /* DemoCollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0533E11C984AFB00BC8417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0533E61C984AFB00BC8417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,11 +32,16 @@
 		3A0533EB1C984AFB00BC8417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0533ED1C984AFB00BC8417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0533F31C984C2300BC8417 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		3A0533F61C98532F00BC8417 /* AnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorPoint.swift; sourceTree = "<group>"; };
-		3A0533F81C9859DA00BC8417 /* GlobalDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDef.swift; sourceTree = "<group>"; };
-		3A0533FD1C98EE9600BC8417 /* NaviFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviFrame.swift; sourceTree = "<group>"; };
-		3A0533FF1C98F73100BC8417 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		3A0534011C98F82E00BC8417 /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		3A3E921F2091FA3F00DEF45D /* StringStatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringStatic.swift; sourceTree = "<group>"; };
+		3A3E92202091FA3F00DEF45D /* PriceChoose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceChoose.swift; sourceTree = "<group>"; };
+		3A3E92212091FA3F00DEF45D /* NaviFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviFrame.swift; sourceTree = "<group>"; };
+		3A3E92222091FA3F00DEF45D /* AnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorPoint.swift; sourceTree = "<group>"; };
+		3A3E92242091FA3F00DEF45D /* GlobalDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDef.swift; sourceTree = "<group>"; };
+		3A3E92252091FA3F00DEF45D /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		3A3E92262091FA3F00DEF45D /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		3A3E92302091FA8F00DEF45D /* PriceChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceChooseView.swift; sourceTree = "<group>"; };
+		3A3E92362091FC8A00DEF45D /* PriceChooseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceChooseView.xib; sourceTree = "<group>"; };
+		3A8CFF31209B111800661DE6 /* PathAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +75,9 @@
 		3A0533E01C984AFB00BC8417 /* DemoCollect */ = {
 			isa = PBXGroup;
 			children = (
-				3A0533FC1C98E31000BC8417 /* SubClasses */,
-				3A0533FB1C98E2D600BC8417 /* Global */,
+				3A3E92232091FA3F00DEF45D /* Global */,
+				3A3E92272091FA3F00DEF45D /* Logical */,
+				3A3E921E2091FA3F00DEF45D /* SubClasses */,
 				3A0533F31C984C2300BC8417 /* MainViewController.swift */,
 				3A0533F51C984C3000BC8417 /* Resource */,
 				3A0533E11C984AFB00BC8417 /* AppDelegate.swift */,
@@ -87,24 +96,43 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
-		3A0533FB1C98E2D600BC8417 /* Global */ = {
+		3A3E921E2091FA3F00DEF45D /* SubClasses */ = {
 			isa = PBXGroup;
 			children = (
-				3A0533FF1C98F73100BC8417 /* AppConfig.swift */,
-				3A0533F81C9859DA00BC8417 /* GlobalDef.swift */,
-				3A0534011C98F82E00BC8417 /* Extention.swift */,
+				3A3E921F2091FA3F00DEF45D /* StringStatic.swift */,
+				3A3E92202091FA3F00DEF45D /* PriceChoose.swift */,
+				3A3E92212091FA3F00DEF45D /* NaviFrame.swift */,
+				3A3E92222091FA3F00DEF45D /* AnchorPoint.swift */,
+				3A8CFF31209B111800661DE6 /* PathAnimation.swift */,
 			);
-			name = Global;
+			path = SubClasses;
 			sourceTree = "<group>";
 		};
-		3A0533FC1C98E31000BC8417 /* SubClasses */ = {
+		3A3E92232091FA3F00DEF45D /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				3A0533F61C98532F00BC8417 /* AnchorPoint.swift */,
-				3A0533FD1C98EE9600BC8417 /* NaviFrame.swift */,
-				2AB2B0911D34D49600CB15EA /* StringStatic.swift */,
+				3A3E92242091FA3F00DEF45D /* GlobalDef.swift */,
+				3A3E92252091FA3F00DEF45D /* Extention.swift */,
+				3A3E92262091FA3F00DEF45D /* AppConfig.swift */,
 			);
-			name = SubClasses;
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3A3E92272091FA3F00DEF45D /* Logical */ = {
+			isa = PBXGroup;
+			children = (
+				3A3E922F2091FA6500DEF45D /* PriceChoose */,
+			);
+			path = Logical;
+			sourceTree = "<group>";
+		};
+		3A3E922F2091FA6500DEF45D /* PriceChoose */ = {
+			isa = PBXGroup;
+			children = (
+				3A3E92302091FA8F00DEF45D /* PriceChooseView.swift */,
+				3A3E92362091FC8A00DEF45D /* PriceChooseView.xib */,
+			);
+			path = PriceChoose;
 			sourceTree = "<group>";
 		};
 		5D817A96217A763B0562E3C9 /* Frameworks */ = {
@@ -177,6 +205,7 @@
 				3A0533EC1C984AFB00BC8417 /* LaunchScreen.storyboard in Resources */,
 				3A0533E91C984AFB00BC8417 /* Assets.xcassets in Resources */,
 				3A0533E71C984AFB00BC8417 /* Main.storyboard in Resources */,
+				3A3E92372091FC8A00DEF45D /* PriceChooseView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +216,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0533FE1C98EE9600BC8417 /* NaviFrame.swift in Sources */,
+				3A8CFF32209B111800661DE6 /* PathAnimation.swift in Sources */,
+				3A3E922E2091FA3F00DEF45D /* AppConfig.swift in Sources */,
+				3A3E922D2091FA3F00DEF45D /* Extention.swift in Sources */,
+				3A3E922C2091FA3F00DEF45D /* GlobalDef.swift in Sources */,
+				3A3E92312091FA8F00DEF45D /* PriceChooseView.swift in Sources */,
+				3A3E922A2091FA3F00DEF45D /* NaviFrame.swift in Sources */,
+				3A3E922B2091FA3F00DEF45D /* AnchorPoint.swift in Sources */,
+				3A3E92292091FA3F00DEF45D /* PriceChoose.swift in Sources */,
 				3A0533F41C984C2300BC8417 /* MainViewController.swift in Sources */,
-				3A0533F71C98532F00BC8417 /* AnchorPoint.swift in Sources */,
-				3A0534001C98F73100BC8417 /* AppConfig.swift in Sources */,
-				2AB2B0921D34D49600CB15EA /* StringStatic.swift in Sources */,
-				3A0533F91C9859DA00BC8417 /* GlobalDef.swift in Sources */,
 				3A0533E21C984AFB00BC8417 /* AppDelegate.swift in Sources */,
-				3A0534021C98F82E00BC8417 /* Extention.swift in Sources */,
+				3A3E92282091FA3F00DEF45D /* StringStatic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +345,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A9VAJDN54X;
 				INFOPLIST_FILE = DemoCollect/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SH.DemoCollect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,7 +363,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A9VAJDN54X;
 				INFOPLIST_FILE = DemoCollect/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SH.DemoCollect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
