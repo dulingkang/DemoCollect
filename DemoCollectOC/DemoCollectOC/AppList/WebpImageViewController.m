@@ -70,8 +70,8 @@ static NSString *constString1 = @"66666";
         [dict setObject:[item value] forKey:[item name]];
     }
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 80, 200, 60)];
-    label.text = @"今送";
-    label.font = [UIFont systemFontOfSize:18];
+    label.text = @"今送(2)";
+    label.font = [UIFont systemFontOfSize:12];
     [label sizeToFit];
     [self.view addSubview:label];
     

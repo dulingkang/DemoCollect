@@ -63,12 +63,19 @@ class PathAnimation: UIViewController {
   }()
 
   lazy var circle: CALayer = {
-    let layer = CALayer()
-    layer.frame = CGRect(x: 0, y: kScreenHeight/2 - Layout.radius, width:Layout.radius * 2 , height: Layout.radius * 2)
-    layer.borderColor = UIColor.red.cgColor
-    layer.borderWidth = 1
-    layer.cornerRadius = Layout.radius
-    return layer
+    let circlePath = UIBezierPath(arcCenter: CGPoint(x: kScreenWidth/2,y: kScreenHeight/2), radius: Layout.radius, startAngle: 0, endAngle: .pi * 2, clockwise: false)
+    
+    let shapeLayer = CAShapeLayer()
+    shapeLayer.path = circlePath.cgPath
+    
+    //change the fill color
+    shapeLayer.fillColor = UIColor.clear.cgColor
+    //you can change the stroke color
+    shapeLayer.strokeColor = UIColor.red.cgColor
+    //you can change the line width
+    shapeLayer.lineWidth = 3.0
+    
+    return shapeLayer
   }()
   
   let transform = CGAffineTransform(translationX: kScreenWidth/2, y: kScreenHeight/2)
@@ -113,7 +120,7 @@ class PathAnimation: UIViewController {
   
   func scaleAnimation() -> CAKeyframeAnimation{
     let keyframeAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
-    keyframeAnimation.values = [1.2, 0.8, 1]
+    keyframeAnimation.values = [1.25, 0.8, 1]
     keyframeAnimation.duration = 1.0;
     keyframeAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
     return keyframeAnimation

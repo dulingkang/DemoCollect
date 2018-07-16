@@ -43,6 +43,7 @@
 		2AFB4A951E0D20A5004F86CC /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB4A941E0D20A5004F86CC /* ResponderChainViewController.m */; };
 		2AFB4A981E0D2564004F86CC /* UIView+hitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB4A971E0D2564004F86CC /* UIView+hitTest.m */; };
 		3A24C3161CCA6B7600E02148 /* DDLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C3151CCA6B7600E02148 /* DDLogViewController.m */; };
+		3A3E921B2090ABF200DEF45D /* NSObject+ValueForKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E921A2090ABF200DEF45D /* NSObject+ValueForKeyPath.m */; };
 		3AAEF7C31CF175A700300729 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C21CF175A700300729 /* PlayerViewController.m */; };
 		3AAEF7C61CF1764400300729 /* beauty_ok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */; };
 		3AE77C301D7706A3006F004F /* WebviewHttpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE77C2F1D7706A3006F004F /* WebviewHttpsViewController.m */; };
@@ -133,6 +134,8 @@
 		2AFB4A971E0D2564004F86CC /* UIView+hitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+hitTest.m"; sourceTree = "<group>"; };
 		3A24C3141CCA6B7600E02148 /* DDLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogViewController.h; sourceTree = "<group>"; };
 		3A24C3151CCA6B7600E02148 /* DDLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogViewController.m; sourceTree = "<group>"; };
+		3A3E92192090ABF200DEF45D /* NSObject+ValueForKeyPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ValueForKeyPath.h"; sourceTree = "<group>"; };
+		3A3E921A2090ABF200DEF45D /* NSObject+ValueForKeyPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ValueForKeyPath.m"; sourceTree = "<group>"; };
 		3AAEF7C11CF175A700300729 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		3AAEF7C21CF175A700300729 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		3AAEF7C51CF1764400300729 /* beauty_ok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beauty_ok.mp3; sourceTree = "<group>"; };
@@ -321,6 +324,8 @@
 				2A7E22F01E73E6A800E1D616 /* AppDelegate+Report.m */,
 				2951F9321F38681D00A89423 /* UIViewController+SSViewConfigure.h */,
 				2951F9331F38681D00A89423 /* UIViewController+SSViewConfigure.m */,
+				3A3E92192090ABF200DEF45D /* NSObject+ValueForKeyPath.h */,
+				3A3E921A2090ABF200DEF45D /* NSObject+ValueForKeyPath.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -575,7 +580,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSPatch.js",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -600,6 +605,7 @@
 				295C4CF91CB3616E0050A5DA /* GifDisplayViewController.m in Sources */,
 				290154321CAD08E4009CA4FA /* AppListViewController.m in Sources */,
 				3AE77C301D7706A3006F004F /* WebviewHttpsViewController.m in Sources */,
+				3A3E921B2090ABF200DEF45D /* NSObject+ValueForKeyPath.m in Sources */,
 				2AB0E4261DD1AEBA000E9731 /* RuntimeViewController.m in Sources */,
 				2AB0E4291DD2B595000E9731 /* StringPropertyViewController.m in Sources */,
 				2951F9341F38681D00A89423 /* UIViewController+SSViewConfigure.m in Sources */,

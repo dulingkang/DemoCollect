@@ -86,13 +86,13 @@ static NSString *const kPassword = @"123456";
 }
 
 - (void)cipherDB {
-    NSString *path = [kDocumentPath stringByAppendingPathComponent:@"wcdb/encrypted.db"];
-    [self.database exec:WCDB::StatementAttach().attach(WCDB::Expr::Expr(path.UTF8String), "DATABASE").as("encrypted KEY '123456'")];
-    WCTResultList columnResultList = {"sqlcipher_export('encrypted');"};
-    WCDB::StatementSelect select = WCDB::StatementSelect();
-    select.select(columnResultList, false);
-    [self.database exec:select];
-    [self.database exec:WCDB::StatementDetach().detach("DATABASE encrypted;")];
+//    NSString *path = [kDocumentPath stringByAppendingPathComponent:@"wcdb/encrypted.db"];
+//    [self.database exec:WCDB::StatementAttach().attach(WCDB::Expr::Expr(path.UTF8String), "DATABASE").as("encrypted KEY '123456'")];
+//    WCTResultList columnResultList = {"sqlcipher_export('encrypted');"};
+//    WCDB::StatementSelect select = WCDB::StatementSelect();
+//    select.select(columnResultList, false);
+//    [self.database exec:select];
+//    [self.database exec:WCDB::StatementDetach().detach("DATABASE encrypted;")];
 }
 
 @end

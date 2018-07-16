@@ -12,6 +12,7 @@
 		3A0533E91C984AFB00BC8417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0533E81C984AFB00BC8417 /* Assets.xcassets */; };
 		3A0533EC1C984AFB00BC8417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0533EA1C984AFB00BC8417 /* LaunchScreen.storyboard */; };
 		3A0533F41C984C2300BC8417 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0533F31C984C2300BC8417 /* MainViewController.swift */; };
+		3A38C41420A92F5000B70DAE /* HeaderStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38C41320A92F5000B70DAE /* HeaderStop.swift */; };
 		3A3E92282091FA3F00DEF45D /* StringStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E921F2091FA3F00DEF45D /* StringStatic.swift */; };
 		3A3E92292091FA3F00DEF45D /* PriceChoose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92202091FA3F00DEF45D /* PriceChoose.swift */; };
 		3A3E922A2091FA3F00DEF45D /* NaviFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E92212091FA3F00DEF45D /* NaviFrame.swift */; };
@@ -32,6 +33,7 @@
 		3A0533EB1C984AFB00BC8417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0533ED1C984AFB00BC8417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0533F31C984C2300BC8417 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A38C41320A92F5000B70DAE /* HeaderStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStop.swift; sourceTree = "<group>"; };
 		3A3E921F2091FA3F00DEF45D /* StringStatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringStatic.swift; sourceTree = "<group>"; };
 		3A3E92202091FA3F00DEF45D /* PriceChoose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceChoose.swift; sourceTree = "<group>"; };
 		3A3E92212091FA3F00DEF45D /* NaviFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviFrame.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				3A3E92212091FA3F00DEF45D /* NaviFrame.swift */,
 				3A3E92222091FA3F00DEF45D /* AnchorPoint.swift */,
 				3A8CFF31209B111800661DE6 /* PathAnimation.swift */,
+				3A38C41320A92F5000B70DAE /* HeaderStop.swift */,
 			);
 			path = SubClasses;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				3A3E922C2091FA3F00DEF45D /* GlobalDef.swift in Sources */,
 				3A3E92312091FA8F00DEF45D /* PriceChooseView.swift in Sources */,
 				3A3E922A2091FA3F00DEF45D /* NaviFrame.swift in Sources */,
+				3A38C41420A92F5000B70DAE /* HeaderStop.swift in Sources */,
 				3A3E922B2091FA3F00DEF45D /* AnchorPoint.swift in Sources */,
 				3A3E92292091FA3F00DEF45D /* PriceChoose.swift in Sources */,
 				3A0533F41C984C2300BC8417 /* MainViewController.swift in Sources */,

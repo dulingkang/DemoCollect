@@ -17,7 +17,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 "NaviFrame",
                 "StringStatic",
                 "PriceChoose",
-                "PathAnimation"
+                "PathAnimation",
+                "HeaderStop"
             ]
         }
     }

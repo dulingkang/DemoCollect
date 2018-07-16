@@ -7,7 +7,23 @@
 //
 
 #import "NSObject+ValueForKeyPath.h"
+#import <objc/runtime.h>
 
 @implementation NSObject (ValueForKeyPath)
 
++ (void)load {
+    Method origin = class_getInstanceMethod([NSObject class], @selector(valueForKeyPath:));
+    Method custom = class_getInstanceMethod([NSObject class], @selector(ss_valueForKeyPath:));
+    method_exchangeImplementations(origin, custom);
+}
+  
+- (id)ss_valueForKeyPath:(NSString *)keyPath {
+  if (![keyPath isEqualToString:@"foregroundView"]) {
+    return [self ss_valueForKeyPath:keyPath];
+  } else {
+    return nil;
+  }
+}
+  
+  
 @end
